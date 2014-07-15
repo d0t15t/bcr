@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_css_alter().
+ *
+ *
+ */
+function celko_theme_css_alter(&$css) {
+  // Remove defaults.css file.
+  unset($css[drupal_get_path('theme', 'bootstrap') . '/css/bootstrap-responsive.css']);
+
+
+}

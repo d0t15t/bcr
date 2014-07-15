@@ -1,0 +1,169 @@
+@import "compass/css3";
+
+@import "compass/css3/transform-legacy";
+
+// channel block styling
+
+$channel_block_width: 250px;
+$channel_block_height: 180px;
+
+
+$gray1: #ccc;
+$blue1: #4AFFD7;
+
+
+$header_padding_1: 20px;
+$orange: #e07726;
+$yellow: #ffc936;
+$lite-gray-1: #cccccc;
+$blue: #5BC0DE;
+
+
+$logo_width: 200px;
+$logo_height: 200px;
+
+// mixins
+
+@mixin menu-leaf-dimension($w, $h) {
+  //width: $w;
+  width: $w * 3;
+  //width: $w + ($w / 2);
+  height: $h;
+  margin-right: $w / 5 !important;
+  //margin-right: $w + ($w/3) !important;
+  //margin-right: $w;
+  overflow: hidden;
+  position: relative;
+  a, a:link, a:visited {
+    position: relative;
+  }
+  //position:relative;
+  //top: $h / 2;
+  &:hover {
+    a:hover {
+      position: relative;
+      top: -$h;
+    }
+  }
+}
+
+
+
+///* Style  Variables */
+///* colors */
+//$gray1: #eeeeee;
+//$gray2: #cccccc;
+//$gray3: #bbbbbb;
+//$gray4: #aaaaaa;
+//$gray5: #666666;
+//$gray6: #f7f7f7;
+//$gray7: #333333;
+//$gray8: #D4D4D4;
+//
+//$orange1: #f7a400;
+//$green1: #007d03;
+//$green2: #dff0d8;
+//$blue1: #3fa9f5;
+//$white: #ffffff;
+//$black: #000000;
+//
+///* spacing */
+//$margin: 10px;
+//$margin-zero: 0px;
+//$margintop: 10px 0px 0px 0px;
+//$marginbottom: 0px 0px 10px 0px;
+//$margin-label: 0px 10px 10px 0px;
+//$margin-form-help: 0px 0px 10px 0px;
+//$margin-form-img: 0px 0px 10px 170px;
+//$margin-form-description: 10px 0px 10px 175px;
+//
+//$padding-0: 0px;
+//$paddingleft: 0px 0px 0px 10px;
+//$paddingleft20: 0px 0px 0px 20px;
+//$paddingleft30: 0px 0px 0px 30px;
+//$padding-label: 4px 0px 4px 10px;
+//$padding-block: 4px;
+//$padding-2: 2px;
+//
+//$borderzero: 0px;
+//$border-1: 1px solid #cccccc;
+//
+///* type */
+//$type-body: "calibri", Helvetica, Lucida Grande, Verdana, sans-serif;
+///* $type-header: "bebas-neue"; */
+//$type-header: "bebas-neue" "Lucida" Grande, sans-serif;
+//
+//$letter_spacing1: 1px;
+//$letter_spacing2: 2px;
+//
+///* sizing */
+//$textsize0: .5em;
+//$textsize1: .8em;
+//$textsize2: 1em;
+//$textsize3: 1.3em;
+//$textsize4: 1.5em;
+//$textsize5: 1.8em;
+//$textsize6: 2em;
+//$textsize7: 2.4em;
+//$textsize8: 2.8em;
+//$textsize9: 3em;
+//$textsize10: .9em;
+//
+//$radius1: 2px;
+//$radius2: 5px;
+//
+///* sizing wrappers */
+//$field_wrapper_size1: 610px;
+//$field_wrapper_size2: 630px;
+//$field_wrapper_size3: 200px;
+//
+//$labelsize1: 150px;
+//$labelsize2: 120px;
+//
+//$fieldsize1: 380px;
+//$fieldsize2: 395px;
+//$fieldsize-60: 60px;
+//$fieldsize-70: 70px;
+//$fieldsize-80: 80px;
+//$fieldsize-120: 120px;
+//$fieldsize-625: 620px;
+//
+//$border-zero: 0px;
+//$border-1: 1px solid #CCCCCC;
+//
+///* agb styles */
+//$agb_no: 50px;
+//
+//
+///* slideshow */
+//$slideheight: 380px;
+//
+//
+//@mixin bg-with-hov {
+//  @include transition(background-color 150ms ease-in);
+//
+//}
+//
+//@mixin grad-hov {
+//  @include transition(background-color 150ms ease-in);
+//  @include background-image(
+//      linear-gradient(
+//          top,
+//          rgba(255, 255, 255, 0.5),
+//          rgba(255, 255, 255, 0.2) 30%,
+//          rgba(0, 0, 0, 0.1) 60%,
+//          rgba(0, 0, 0, 0.3)
+//      )
+//  );
+//  &:hover {
+//    background-color: $gray1;
+//  }
+//}
+//
+//%cs_bebbesneue {
+//  font-family: "bebas-neue";
+//  font-weight: 400;
+//  letter-spacing: 1px;
+//  color: $green1;
+//  font-size: 16px;
+//}

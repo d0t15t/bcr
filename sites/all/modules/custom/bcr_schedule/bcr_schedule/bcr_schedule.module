@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the BCR Schedule feature.
+ */
+
+include_once 'bcr_schedule.features.inc';

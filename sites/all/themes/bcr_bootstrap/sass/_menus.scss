@@ -1,0 +1,87 @@
+// @file _menus.scss
+
+// TESTING
+body {
+  //display: none;
+}
+
+.menu-wrapper {
+  .menu {
+
+    .leaf {
+      background-repeat: no-repeat !important;
+      //overflow: hidden;
+    }
+    .leaf-soundcloud-link {
+      @include menu-leaf-dimension(23px, 20px); // width, height
+      //margin-left: 10px;
+      //margin-top: 3px;
+      margin-right: 0px !important;
+    }
+    .leaf-twitter-link {
+      @include menu-leaf-dimension(16px, 24px); // width, height
+    }
+    .leaf-facebook-link {
+      @include menu-leaf-dimension(16px, 24px); // width, height
+    }
+    .leaf-youtube-link {
+      @include menu-leaf-dimension(16px, 22px); // width, height
+    }
+    .leaf-instagram-link {
+      @include menu-leaf-dimension(16px, 22px); // width, height
+    }
+    .leaf-mail-link {
+      @include menu-leaf-dimension(16px, 22px); // width, height
+    }
+    .leaf-youtube-link, .leaf-instagram-link, .leaf-mail-link {
+      margin-top: 3px;
+    }
+  }
+}
+
+// OVERRIDE
+.region-navigation {
+  background: none;
+  border: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 0px !important;
+  .navbar-collapse {
+    ul.navbar-nav {
+      //float: none;
+      margin-left: 160px;
+      li a {
+        padding: 3px 0px 1px 0px !important;
+        margin-right: 20px;
+      }
+      li.active-trail {
+        a.active {
+          background: none !important;
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+
+  #block-menu-menu-main-2 {
+    //display: block !important;
+    //margin-left: 185px;
+    //width: 600px;
+    .menu {
+      .leaf {
+        //display: inline-block;
+        a {
+          padding-top: 0px !important;
+          &:hover {
+            background: none;
+          }
+        }
+      }
+    }
+  }
+  a {
+    font-size: .9em;
+    letter-spacing: 1px;
+    text-transform: uppercase !important;
+  }
+}

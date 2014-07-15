@@ -1,0 +1,5 @@
+name = BCR Custom Forms
+package = BCR
+description = Custom forms
+core = 7.x
+version = 7.x

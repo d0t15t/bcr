@@ -1,0 +1,11 @@
+name = "Ajax pages"
+description = "Enables full website page loads (page.tpl.php) with Ajax."
+core = "7.x"
+configure = "admin/config/user-interface/ajax-pages"
+
+; Information added by drupal.org packaging script on 2013-09-30
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "ajax_pages"
+datestamp = "1380553497"
+

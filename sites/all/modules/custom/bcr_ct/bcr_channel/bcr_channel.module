@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the BCR Channels feature.
+ */
+
+include_once 'bcr_channel.features.inc';

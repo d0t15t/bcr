@@ -1,0 +1,98 @@
+$gutter_adjust: 20px;
+.view-bcr-channels {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  .views-row {
+    display: inline-block;
+    margin-bottom: $gutter_adjust * 2;
+  }
+  .field-name-channel-image-compound {
+    .channel-img-wrapper {
+      position: relative;
+      width: 250px;
+      height: 180px;
+      margin: 0px 15px $gutter_adjust - 5 0px;
+      .channel-img-el {
+        //width: 250px;
+        //height: 180px;
+        position: absolute;
+        top: 0px;
+        @include transition-property(display);
+        @include transition-duration(200ms);
+        //&:hover {
+        //  @include opacity (0);
+        //  //display: none;
+        //  @include transition-property(opacity);
+        //  @include transition-duration(200ms);
+        //
+        //}
+        .channel-img-el-inner {
+          width: $channel_block_width;
+          height: $channel_block_height;
+          display: block;
+          position: absolute;
+          top: 0px;
+        }
+        a {
+          //padding: 0px $gutter_adjust / 2 0px $gutter_adjust / 2;
+          width: $channel_block_width;
+          height: $channel_block_height;
+          display: block;
+          vertical-align: middle;
+          line-height: $channel_block_height;
+          text-transform: uppercase;
+          font-size: 1.1em !important;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+        a, a:link, a:visited {
+          color: white !important;
+        }
+
+      }
+      .channel-img-overlay {
+        &:hover {
+          @include opacity(0);
+          @include transition(opacity, 100ms ease-out);
+        }
+      }
+    }
+  }
+
+
+  .field-name-channel-cover {
+    margin: 0px 15px $gutter_adjust 0px;
+    h4 {
+      margin: 0px !important;
+      font-size: 1em !important;
+      font-weight: normal;
+      a {
+        padding: 0px $gutter_adjust / 2 0px $gutter_adjust / 2;
+        width: $channel_block_width;
+        height: $channel_block_height;
+        display: block;
+        background-color: black;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: $channel_block_height;
+        @include opacity(.7);
+      }
+      a, a:link, a:visited {
+        color: white !important;
+      }
+      &:hover {
+        @include opacity(0);
+        @include transition(opacity, 100ms ease-out);
+      }
+    }
+  }
+  .field-type-image {
+    position: relative;
+    top: -$channel_block_height - $gutter_adjust;
+    z-index: -1;
+    height: 0px;
+  }
+
+}
+

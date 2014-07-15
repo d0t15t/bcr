@@ -1,0 +1,10 @@
+name = BCR Player
+description = Define the BCR main player
+core = 7.x
+package = BCR
+version = 7.x-1.0
+project = bcr_display
+#dependencies[] = features
+#dependencies[] = menu
+
+project path = sites/all/modules/custom/bcr_display

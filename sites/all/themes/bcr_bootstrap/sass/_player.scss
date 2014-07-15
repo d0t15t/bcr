@@ -1,0 +1,63 @@
+// player styles
+
+
+.region-persistent {
+  margin-top: 50px;
+  #logo-element, iframe, .streaming-menu {
+    display: inline-block;
+  }
+  //display: none;
+  //border-bottom: 1px solid black;
+  #block-bcr-blocks-bcr-player {
+    margin: inherit auto inherit auto;
+  }
+  .logo-rel {
+    .bcr-logo {
+      position: relative;
+      left: 20px;
+      top: 80px;
+      width: 50px;
+      height: 50px;
+    }
+
+  }
+
+  .streaming-menu {
+    //background: gray;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .9em;
+    position: relative;
+    top: -43px;
+    left: -100px;
+    a:hover {
+    background: none !important;
+  }
+  }
+
+  iframe {
+
+    border: 0px;
+    vertical-align: bottom;
+    height: 80px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    //background: #ccc;
+    padding: 0px !important;
+    margin: 0px !important;
+    position: relative;
+    top: -30px
+  }
+  iframe, a {
+    display: inline-block;
+  }
+}
+
+#block-bcr-blocks-bcr-player {
+  .container {
+    //border-top: 1px solid #ccc;
+    //border-bottom: 1px solid #ccc;
+
+  }
+}

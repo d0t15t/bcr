@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function bcr_schedule_updater_install() {
+  // Create a default scheduled job.
+  $job = array(
+    'type' => 'daily_schedule_updater_cron',
+    'period' => 86400,
+    'crontab' => '0 0 * * *',
+    'periodic' => TRUE,
+  );
+  JobScheduler::get('daily_schedule_updater')->set($job);
+}

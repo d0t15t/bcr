@@ -1,0 +1,5 @@
+name = BCR Channels
+package = BCR
+description = Custom functions for BCR Channels
+core = 7.x
+version = "7.x-1.0"

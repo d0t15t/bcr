@@ -1,0 +1,114 @@
+body {
+  //display: none;
+}
+
+a, a:link, a:visited {
+  color: black !important;
+}
+a:hover {
+  color: $blue1 !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+  //display: none !important;
+}
+
+
+
+
+// streaming menu block
+#block-menu-menu-streams {
+  //position: relative;
+  //left: -230px;
+  //top: 25px;
+  //z-index: 2;
+  //float: right;
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  li a:hover {
+    background: none !important;
+  }
+}
+
+
+// logo
+.logo-wrapper, .logo {
+  height: 130px !important;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  width: 210px !important;
+  z-index: 1;
+}
+.logo-wrapper {
+  display: none;
+}
+.logo-wrapper, .menu-wrapper {
+  float: none;
+}
+.menu-wrapper {
+}
+.region-navigation .navbar-collapse ul.navbar-nav {
+  //margin-top: 0px !important;
+  //display: inline-block;
+}
+.logo {
+  width: $logo_width;
+  height: $logo_height;
+  //background-color: pink;
+  //background: #ffffff url("img_tree.png") no-repeat right top;
+  background: url('/sites/default/files/bcr-logo.gif') no-repeat;
+  &:hover {
+    background: url('/sites/default/files/bcr-logo-hover.png') no-repeat;
+  }
+}
+
+
+
+.main-container {
+  // front page design
+  .panels-flexible-4 {
+    // upper left
+    .panels-flexible-region-4-left_1 {
+      // schedule pane
+      .pane-bcr-schedule-today-panel-pane-1 {
+        .view-bcr-schedule-today {
+          width: 75%;
+          margin: 0px auto 0px auto;
+          padding-bottom: 30px;
+        }
+      }
+      // chat pane
+      .pane-bcr-blocks-bcr-chat {
+          margin: 0px auto 0px auto;
+          width: 75%;
+        .tlkio {
+          iframe {
+            height: 400px !important;
+
+          }
+        }
+      }
+    }
+    // upper right
+    .panels-flexible-region-4-center {
+      .panels-flexible-region-4-center-inside {
+        border: 1px solid #ccc;
+        padding: 20px;
+
+        // recent blog
+        .view-bcr-blog-recent {
+          .views-row {
+            margin: 0px 0px 30px 0px ;
+            .field-type-image {
+              float: right;
+              padding: 0px 0px 10px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

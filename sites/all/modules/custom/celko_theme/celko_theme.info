@@ -1,0 +1,5 @@
+name = Celko Custom Theme Fixes
+package = maxcelko.com
+description = custom alters of bootstrap css to fix theme
+core = 7.x
+version = "7.x-1.0"

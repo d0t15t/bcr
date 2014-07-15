@@ -1,0 +1,11 @@
+<?php
+/**
+ * @file
+ * Drupal needs this blank file.
+ */
+
+/**
+ * @file bcr_main_menu.module
+ */
+
+//drupal_add_js(drupal_get_path('module', 'bcr_main_menu') . '/bcr_main_menu.js');

@@ -1,0 +1,196 @@
+<?php
+
+/*
+ * @file bcr_schedule_updater.module
+ */
+
+
+/**
+ * Implements hook_page_build().
+ *
+ * @TODO DEPRECATED testing only
+ *
+ */
+function bcr_schedule_updater_page_build(&$page) {
+//  bcr_schedule_updater_daily_schedule_callback();
+
+
+//  $query = new EntityFieldQuery();
+//  $query
+//    ->entityCondition('entity_type', 'node')
+//    ->entityCondition('bundle', 'blog')
+//    ->propertyCondition('status', 1);
+//  $result = $query->execute();
+//  $ids = isset($result['node']) ? array_keys($result['node']) : NULL;
+//  foreach ($ids as $id) {
+//    $node = node_load($id);
+//    $wrapped = entity_metadata_wrapper('node', $node);
+//    $t=1;
+//    unset($wrapped->nid);
+////    $wrapped->nid->set();
+//    $wrapped->save();
+//    $t=1;
+//
+//  }
+//
+//  return $ids;
+
+
+}
+
+
+
+/**
+ * Implements hook_cron_job_scheduler_info().
+ */
+function bcr_schedule_updater_cron_job_scheduler_info() {
+  $info = array();
+  $info['daily_schedule_updater'] = array(
+    'daily schedule callback' => 'bcr_schedule_updater_daily_schedule_callback',
+  );
+  return $info;
+}
+
+/**
+ *
+ */
+function bcr_schedule_updater_daily_schedule_callback() {
+  // unpublish current day & publish the next
+  $passing_day = bcr_schedule_updater_passing_day_getter();
+  $cur_day = bcr_schedule_updater_cur_day_getter();
+  bcr_schedule_updater_update_day($passing_day[0], 0);
+  bcr_schedule_updater_update_day($cur_day, 1);
+//  $passing_day = bcr_schedule_updater_update_day($passing_day[0], 0);
+//  $cur_day = bcr_schedule_updater_update_day($cur_day, 1);
+//  $t=1;
+}
+
+/**
+ * Helper function
+ * based on the passing day, return the NID of the coming 'current' day
+ */
+function bcr_schedule_updater_cur_day_getter() {
+  $date = new DateTime('now');
+  $today = $date->format('N');
+  $ids = bcr_schedule_updater_schedule_ids();
+  return $ids[$today];
+}
+
+
+/**
+ * Helper function
+ * return NIDs of published schedule content
+ * by design, this should return one NID of the node
+ * representing the current day of the week
+ *
+ * @return array
+ */
+function bcr_schedule_updater_passing_day_getter() {
+  $query = new EntityFieldQuery();
+  $query
+    ->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'schedule')
+    ->propertyCondition('promote', 1);
+  $result = $query->execute();
+  $ids = isset($result['node']) ? array_keys($result['node']) : NULL;
+  return $ids;
+}
+
+
+/**
+ * Helper function
+ * return NIDs of schedule content type
+ *
+ * @return array
+ */
+function bcr_schedule_updater_schedule_ids() {
+  /*
+   * days represented as monday(1) through sunday(7)
+   * as per ISO-8601 php date formatter
+   */
+  return array(
+    1 => 67,
+    2 => 68,
+    3 => 69,
+    4 => 70,
+    5 => 71,
+    6 => 72,
+    7 => 73,
+  );
+}
+
+/**
+ * Helper function
+ * Update node status
+ *
+ * @param $node
+ * @param int $status
+ * @return bool|mixed
+ */
+function bcr_schedule_updater_update_day($node, $status = 0) {
+  if (is_int($node)) {
+    $node = node_load($node);
+  }
+  if (isset($node->status)) {
+//    $node->status = 1;
+    $node->promote = $status;
+    node_save($node);
+  }
+  return $node;
+}
+
+
+// ****************
+
+/**
+ * Implements hook_menu().
+ */
+function bcr_schedule_updater_menu() {
+  $items = array();
+
+  $items['admin/config/system/daily-task'] = array(
+    'title' => 'Daily task',
+    'description' => 'Change options relating to the daily task',
+    'access arguments' => array('administer site configuration'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('bcr_schedule_updater_admin_form'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
+
+/**
+ * Administration form for the weekly task.
+ */
+function bcr_schedule_updater_admin_form($form, &$form_state) {
+  $form['daily_task_day'] = array(
+    '#type' => 'select',
+    '#title' => t('Day of the week'),
+    '#description' => t('Choose the day of the week that the compute statistics function will run on.'),
+    '#options' => array(0 => t('Sunday'), 1 => t('Monday'), 2 => t('Tuesday'), 3 => t('Wednesday'), 4 => t('Thursday'), 5 => t('Friday'), 6 => t('Saturday')),
+    '#default_value' => variable_get('daily_task_day', '0'),
+  );
+
+  $form = system_settings_form($form);
+
+  $form['#submit'][] = 'bcr_schedule_updater_admin_form_submit';
+
+  return $form;
+}
+
+/**
+ * Submit callback for Administration form.
+ */
+function bcr_schedule_updater_admin_form_submit(&$form, &$form_state) {
+  // The variables will have already been set by the time this callback runs.
+
+  // Update the scheduled job.
+  $job = array(
+    'type' => 'weekly_stats',
+    'period' => 86400 * 7,
+    'crontab' => '0 0 * * *',
+    'periodic' => TRUE,
+  );
+  JobScheduler::get('weekly_task_statistics')->set($job);
+}

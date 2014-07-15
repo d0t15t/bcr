@@ -1,0 +1,392 @@
+/* import compass */
+/* import partials */
+/* line 5, ../sass/_body.scss */
+a, a:link, a:visited {
+  color: black !important;
+}
+
+/* line 8, ../sass/_body.scss */
+a:hover {
+  color: #4affd7 !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+}
+
+/* line 25, ../sass/_body.scss */
+#block-menu-menu-streams ul {
+  margin: 0px;
+  padding: 0px;
+}
+/* line 29, ../sass/_body.scss */
+#block-menu-menu-streams li a:hover {
+  background: none !important;
+}
+
+/* line 36, ../sass/_body.scss */
+.logo-wrapper, .logo {
+  height: 130px !important;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  width: 210px !important;
+  z-index: 1;
+}
+
+/* line 44, ../sass/_body.scss */
+.logo-wrapper {
+  display: none;
+}
+
+/* line 47, ../sass/_body.scss */
+.logo-wrapper, .menu-wrapper {
+  float: none;
+}
+
+/* line 56, ../sass/_body.scss */
+.logo {
+  width: 200px;
+  height: 200px;
+  background: url("/sites/default/files/bcr-logo.gif") no-repeat;
+}
+/* line 62, ../sass/_body.scss */
+.logo:hover {
+  background: url("/sites/default/files/bcr-logo-hover.png") no-repeat;
+}
+
+/* line 76, ../sass/_body.scss */
+.main-container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-schedule-today-panel-pane-1 .view-bcr-schedule-today {
+  width: 75%;
+  margin: 0px auto 0px auto;
+  padding-bottom: 30px;
+}
+/* line 83, ../sass/_body.scss */
+.main-container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-blocks-bcr-chat {
+  margin: 0px auto 0px auto;
+  width: 75%;
+}
+/* line 87, ../sass/_body.scss */
+.main-container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-blocks-bcr-chat .tlkio iframe {
+  height: 400px !important;
+}
+/* line 96, ../sass/_body.scss */
+.main-container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+/* line 102, ../sass/_body.scss */
+.main-container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside .view-bcr-blog-recent .views-row {
+  margin: 0px 0px 30px 0px;
+}
+/* line 104, ../sass/_body.scss */
+.main-container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside .view-bcr-blog-recent .views-row .field-type-image {
+  float: right;
+  padding: 0px 0px 10px 20px;
+}
+
+/* line 2, ../sass/_channel-display.scss */
+.view-bcr-channels {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+/* line 6, ../sass/_channel-display.scss */
+.view-bcr-channels .views-row {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+/* line 11, ../sass/_channel-display.scss */
+.view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper {
+  position: relative;
+  width: 250px;
+  height: 180px;
+  margin: 0px 15px 15px 0px;
+}
+/* line 16, ../sass/_channel-display.scss */
+.view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el {
+  position: absolute;
+  top: 0px;
+  -webkit-transition-property: display;
+  -moz-transition-property: display;
+  -o-transition-property: display;
+  transition-property: display;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+/* line 30, ../sass/_channel-display.scss */
+.view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el .channel-img-el-inner {
+  width: 250px;
+  height: 180px;
+  display: block;
+  position: absolute;
+  top: 0px;
+}
+/* line 37, ../sass/_channel-display.scss */
+.view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a {
+  width: 250px;
+  height: 180px;
+  display: block;
+  vertical-align: middle;
+  line-height: 180px;
+  text-transform: uppercase;
+  font-size: 1.1em !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+/* line 49, ../sass/_channel-display.scss */
+.view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a, .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a:link, .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a:visited {
+  color: white !important;
+}
+/* line 55, ../sass/_channel-display.scss */
+.view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-overlay:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity, 100ms ease-out;
+  -moz-transition: opacity, 100ms ease-out;
+  -o-transition: opacity, 100ms ease-out;
+  transition: opacity, 100ms ease-out;
+}
+/* line 64, ../sass/_channel-display.scss */
+.view-bcr-channels .field-name-channel-cover {
+  margin: 0px 15px 20px 0px;
+}
+/* line 66, ../sass/_channel-display.scss */
+.view-bcr-channels .field-name-channel-cover h4 {
+  margin: 0px !important;
+  font-size: 1em !important;
+  font-weight: normal;
+}
+/* line 70, ../sass/_channel-display.scss */
+.view-bcr-channels .field-name-channel-cover h4 a {
+  padding: 0px 10px 0px 10px;
+  width: 250px;
+  height: 180px;
+  display: block;
+  background-color: black;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 180px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 81, ../sass/_channel-display.scss */
+.view-bcr-channels .field-name-channel-cover h4 a, .view-bcr-channels .field-name-channel-cover h4 a:link, .view-bcr-channels .field-name-channel-cover h4 a:visited {
+  color: white !important;
+}
+/* line 84, ../sass/_channel-display.scss */
+.view-bcr-channels .field-name-channel-cover h4:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity, 100ms ease-out;
+  -moz-transition: opacity, 100ms ease-out;
+  -o-transition: opacity, 100ms ease-out;
+  transition: opacity, 100ms ease-out;
+}
+/* line 90, ../sass/_channel-display.scss */
+.view-bcr-channels .field-type-image {
+  position: relative;
+  top: -200px;
+  z-index: -1;
+  height: 0px;
+}
+
+/* line 11, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf {
+  background-repeat: no-repeat !important;
+}
+/* line 15, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-soundcloud-link {
+  width: 69px;
+  height: 20px;
+  margin-right: 4.6px !important;
+  overflow: hidden;
+  position: relative;
+  margin-right: 0px !important;
+}
+/* line 37, ../sass/_var.scss */
+.menu-wrapper .menu .leaf-soundcloud-link a, .menu-wrapper .menu .leaf-soundcloud-link a:link, .menu-wrapper .menu .leaf-soundcloud-link a:visited {
+  position: relative;
+}
+/* line 43, ../sass/_var.scss */
+.menu-wrapper .menu .leaf-soundcloud-link:hover a:hover {
+  position: relative;
+  top: -20px;
+}
+/* line 21, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-twitter-link {
+  width: 48px;
+  height: 24px;
+  margin-right: 3.2px !important;
+  overflow: hidden;
+  position: relative;
+}
+/* line 37, ../sass/_var.scss */
+.menu-wrapper .menu .leaf-twitter-link a, .menu-wrapper .menu .leaf-twitter-link a:link, .menu-wrapper .menu .leaf-twitter-link a:visited {
+  position: relative;
+}
+/* line 43, ../sass/_var.scss */
+.menu-wrapper .menu .leaf-twitter-link:hover a:hover {
+  position: relative;
+  top: -24px;
+}
+/* line 24, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-facebook-link {
+  width: 48px;
+  height: 24px;
+  margin-right: 3.2px !important;
+  overflow: hidden;
+  position: relative;
+}
+/* line 37, ../sass/_var.scss */
+.menu-wrapper .menu .leaf-facebook-link a, .menu-wrapper .menu .leaf-facebook-link a:link, .menu-wrapper .menu .leaf-facebook-link a:visited {
+  position: relative;
+}
+/* line 43, ../sass/_var.scss */
+.menu-wrapper .menu .leaf-facebook-link:hover a:hover {
+  position: relative;
+  top: -24px;
+}
+/* line 27, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-youtube-link {
+  width: 48px;
+  height: 22px;
+  margin-right: 3.2px !important;
+  overflow: hidden;
+  position: relative;
+}
+/* line 37, ../sass/_var.scss */
+.menu-wrapper .menu .leaf-youtube-link a, .menu-wrapper .menu .leaf-youtube-link a:link, .menu-wrapper .menu .leaf-youtube-link a:visited {
+  position: relative;
+}
+/* line 43, ../sass/_var.scss */
+.menu-wrapper .menu .leaf-youtube-link:hover a:hover {
+  position: relative;
+  top: -22px;
+}
+/* line 30, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-instagram-link {
+  width: 48px;
+  height: 22px;
+  margin-right: 3.2px !important;
+  overflow: hidden;
+  position: relative;
+}
+/* line 37, ../sass/_var.scss */
+.menu-wrapper .menu .leaf-instagram-link a, .menu-wrapper .menu .leaf-instagram-link a:link, .menu-wrapper .menu .leaf-instagram-link a:visited {
+  position: relative;
+}
+/* line 43, ../sass/_var.scss */
+.menu-wrapper .menu .leaf-instagram-link:hover a:hover {
+  position: relative;
+  top: -22px;
+}
+/* line 33, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-mail-link {
+  width: 48px;
+  height: 22px;
+  margin-right: 3.2px !important;
+  overflow: hidden;
+  position: relative;
+}
+/* line 37, ../sass/_var.scss */
+.menu-wrapper .menu .leaf-mail-link a, .menu-wrapper .menu .leaf-mail-link a:link, .menu-wrapper .menu .leaf-mail-link a:visited {
+  position: relative;
+}
+/* line 43, ../sass/_var.scss */
+.menu-wrapper .menu .leaf-mail-link:hover a:hover {
+  position: relative;
+  top: -22px;
+}
+/* line 36, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-youtube-link, .menu-wrapper .menu .leaf-instagram-link, .menu-wrapper .menu .leaf-mail-link {
+  margin-top: 3px;
+}
+
+/* line 43, ../sass/_menus.scss */
+.region-navigation {
+  background: none;
+  border: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 0px !important;
+}
+/* line 50, ../sass/_menus.scss */
+.region-navigation .navbar-collapse ul.navbar-nav {
+  margin-left: 160px;
+}
+/* line 53, ../sass/_menus.scss */
+.region-navigation .navbar-collapse ul.navbar-nav li a {
+  padding: 3px 0px 1px 0px !important;
+  margin-right: 20px;
+}
+/* line 58, ../sass/_menus.scss */
+.region-navigation .navbar-collapse ul.navbar-nav li.active-trail a.active {
+  background: none !important;
+  border-bottom: 1px solid black;
+}
+/* line 73, ../sass/_menus.scss */
+.region-navigation #block-menu-menu-main-2 .menu .leaf a {
+  padding-top: 0px !important;
+}
+/* line 75, ../sass/_menus.scss */
+.region-navigation #block-menu-menu-main-2 .menu .leaf a:hover {
+  background: none;
+}
+/* line 82, ../sass/_menus.scss */
+.region-navigation a {
+  font-size: .9em;
+  letter-spacing: 1px;
+  text-transform: uppercase !important;
+}
+
+/* line 4, ../sass/_player.scss */
+.region-persistent {
+  margin-top: 50px;
+}
+/* line 6, ../sass/_player.scss */
+.region-persistent #logo-element, .region-persistent iframe, .region-persistent .streaming-menu {
+  display: inline-block;
+}
+/* line 11, ../sass/_player.scss */
+.region-persistent #block-bcr-blocks-bcr-player {
+  margin: inherit auto inherit auto;
+}
+/* line 15, ../sass/_player.scss */
+.region-persistent .logo-rel .bcr-logo {
+  position: relative;
+  left: 20px;
+  top: 80px;
+  width: 50px;
+  height: 50px;
+}
+/* line 25, ../sass/_player.scss */
+.region-persistent .streaming-menu {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .9em;
+  position: relative;
+  top: -43px;
+  left: -100px;
+}
+/* line 33, ../sass/_player.scss */
+.region-persistent .streaming-menu a:hover {
+  background: none !important;
+}
+/* line 38, ../sass/_player.scss */
+.region-persistent iframe {
+  border: 0px;
+  vertical-align: bottom;
+  height: 80px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0px !important;
+  margin: 0px !important;
+  position: relative;
+  top: -30px;
+}
+/* line 52, ../sass/_player.scss */
+.region-persistent iframe, .region-persistent a {
+  display: inline-block;
+}

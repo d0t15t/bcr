@@ -1,0 +1,5 @@
+name = BCR Schedule Updater
+package = BCR
+description = Simple schedule updater - daily updates published status of day based Schedule content
+core = 7.x
+version = "7.x-1.0"
