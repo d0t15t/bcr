@@ -1,2 +1,18 @@
 // page layout
 
+h1, h2, h3, h4, h5, h6 {
+  @include header-font;
+}
+
+.main-container {
+  .row {
+    margin-left: 225px;
+  }
+}
+
+.page-header {
+  font-size: 110px;
+  text-align: right;
+  line-height: 118px;
+  border: 0;
+}

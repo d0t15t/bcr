@@ -1,6 +1,6 @@
 @import "compass/css3";
 
-@import "compass/css3/transform-legacy";
+@import "compass/css3/transform";
 
 // channel block styling
 
@@ -47,6 +47,11 @@ $logo_height: 200px;
   }
 }
 
+@mixin header-font {
+  font-family: 'DIN Next W02 Medium';
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
 
 
 ///* Style  Variables */

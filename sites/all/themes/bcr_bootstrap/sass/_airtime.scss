@@ -1,0 +1,54 @@
+#headerLiveHolder {
+  position: fixed;
+  top: 12px;
+  width: 700px !important;
+  margin-left: 240px;
+
+  @include header-font;
+
+  h4 {
+    display: none;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+
+  .current {
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .next {
+    width: auto !important;
+    display: block;
+  }
+
+  .time-elapsed,
+  .time-remaining {
+    position: relative;
+    display: inline-block;
+    right: auto;
+    margin: 0 0 0 10px;
+    float: right;
+  }
+}
+
+#headerLiveHolder ul li.current {
+  color: black;
+}
+
+#headerLiveHolder ul li span#time-elapsed {
+  right: auto;
+}
+
+#headerLiveHolder ul li span#time-elapsed:before {
+  content: "e. ";
+}
+
+#headerLiveHolder ul li span#time-remaining:before {
+  content: "r. ";
+}

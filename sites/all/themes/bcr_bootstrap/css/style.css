@@ -1,28 +1,33 @@
 /* import compass */
 /* import partials */
-/* line 5, ../sass/_body.scss */
+/* line 1, ../sass/_body.scss */
+body {
+  padding-top: 60px;
+}
+
+/* line 6, ../sass/_body.scss */
 a, a:link, a:visited {
   color: black !important;
 }
 
-/* line 8, ../sass/_body.scss */
+/* line 9, ../sass/_body.scss */
 a:hover {
   color: #4affd7 !important;
   text-decoration: none !important;
   text-shadow: none !important;
 }
 
-/* line 25, ../sass/_body.scss */
+/* line 26, ../sass/_body.scss */
 #block-menu-menu-streams ul {
   margin: 0px;
   padding: 0px;
 }
-/* line 29, ../sass/_body.scss */
+/* line 30, ../sass/_body.scss */
 #block-menu-menu-streams li a:hover {
   background: none !important;
 }
 
-/* line 36, ../sass/_body.scss */
+/* line 37, ../sass/_body.scss */
 .logo-wrapper, .logo {
   height: 130px !important;
   overflow: hidden;
@@ -32,52 +37,59 @@ a:hover {
   z-index: 1;
 }
 
-/* line 44, ../sass/_body.scss */
+/* line 45, ../sass/_body.scss */
 .logo-wrapper {
   display: none;
 }
 
-/* line 47, ../sass/_body.scss */
+/* line 48, ../sass/_body.scss */
 .logo-wrapper, .menu-wrapper {
   float: none;
 }
 
-/* line 56, ../sass/_body.scss */
+/* line 53, ../sass/_body.scss */
+.region-navigation .navbar-collapse ul.navbar-nav {
+  font-family: 'DIN Next W02 Medium';
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* line 58, ../sass/_body.scss */
 .logo {
   width: 200px;
   height: 200px;
-  background: url("/sites/default/files/bcr-logo.gif") no-repeat;
+  background: url("../images/bcr-logo.gif") no-repeat;
 }
-/* line 62, ../sass/_body.scss */
+/* line 64, ../sass/_body.scss */
 .logo:hover {
-  background: url("/sites/default/files/bcr-logo-hover.png") no-repeat;
+  background: url("../images/bcr-logo-hover.png") no-repeat;
 }
 
-/* line 76, ../sass/_body.scss */
+/* line 78, ../sass/_body.scss */
 .main-container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-schedule-today-panel-pane-1 .view-bcr-schedule-today {
   width: 75%;
   margin: 0px auto 0px auto;
   padding-bottom: 30px;
 }
-/* line 83, ../sass/_body.scss */
+/* line 85, ../sass/_body.scss */
 .main-container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-blocks-bcr-chat {
   margin: 0px auto 0px auto;
   width: 75%;
 }
-/* line 87, ../sass/_body.scss */
+/* line 89, ../sass/_body.scss */
 .main-container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-blocks-bcr-chat .tlkio iframe {
   height: 400px !important;
 }
-/* line 96, ../sass/_body.scss */
+/* line 98, ../sass/_body.scss */
 .main-container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside {
   border: 1px solid #ccc;
   padding: 20px;
 }
-/* line 102, ../sass/_body.scss */
+/* line 104, ../sass/_body.scss */
 .main-container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside .view-bcr-blog-recent .views-row {
   margin: 0px 0px 30px 0px;
 }
-/* line 104, ../sass/_body.scss */
+/* line 106, ../sass/_body.scss */
 .main-container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside .view-bcr-blog-recent .views-row .field-type-image {
   float: right;
   padding: 0px 0px 10px 20px;
@@ -313,46 +325,84 @@ a:hover {
 }
 /* line 50, ../sass/_menus.scss */
 .region-navigation .navbar-collapse ul.navbar-nav {
-  margin-left: 160px;
+  font-family: 'DIN Next W02 Medium';
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  position: fixed;
+  top: 100px;
+  z-index: 10;
 }
-/* line 53, ../sass/_menus.scss */
+/* line 59, ../sass/_menus.scss */
+.region-navigation .navbar-collapse ul.navbar-nav li {
+  display: block;
+  margin: 5px 0;
+  float: none;
+  font-size: 14px;
+}
+/* line 66, ../sass/_menus.scss */
 .region-navigation .navbar-collapse ul.navbar-nav li a {
   padding: 3px 0px 1px 0px !important;
   margin-right: 20px;
 }
-/* line 58, ../sass/_menus.scss */
+/* line 71, ../sass/_menus.scss */
 .region-navigation .navbar-collapse ul.navbar-nav li.active-trail a.active {
   background: none !important;
-  border-bottom: 1px solid black;
+  text-decoration: underline !important;
 }
-/* line 73, ../sass/_menus.scss */
+/* line 86, ../sass/_menus.scss */
 .region-navigation #block-menu-menu-main-2 .menu .leaf a {
   padding-top: 0px !important;
 }
-/* line 75, ../sass/_menus.scss */
+/* line 88, ../sass/_menus.scss */
 .region-navigation #block-menu-menu-main-2 .menu .leaf a:hover {
   background: none;
 }
-/* line 82, ../sass/_menus.scss */
+/* line 95, ../sass/_menus.scss */
 .region-navigation a {
   font-size: .9em;
   letter-spacing: 1px;
   text-transform: uppercase !important;
 }
 
+/* line 3, ../sass/_page.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DIN Next W02 Medium';
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* line 8, ../sass/_page.scss */
+.main-container .row {
+  margin-left: 225px;
+}
+
+/* line 13, ../sass/_page.scss */
+.page-header {
+  font-size: 110px;
+  text-align: right;
+  line-height: 118px;
+  border: 0;
+}
+
 /* line 4, ../sass/_player.scss */
 .region-persistent {
-  margin-top: 50px;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  border-bottom: 1px solid black;
+  background: white;
+  z-index: 10;
 }
-/* line 6, ../sass/_player.scss */
+/* line 14, ../sass/_player.scss */
 .region-persistent #logo-element, .region-persistent iframe, .region-persistent .streaming-menu {
   display: inline-block;
 }
-/* line 11, ../sass/_player.scss */
+/* line 19, ../sass/_player.scss */
 .region-persistent #block-bcr-blocks-bcr-player {
   margin: inherit auto inherit auto;
 }
-/* line 15, ../sass/_player.scss */
+/* line 23, ../sass/_player.scss */
 .region-persistent .logo-rel .bcr-logo {
   position: relative;
   left: 20px;
@@ -360,7 +410,7 @@ a:hover {
   width: 50px;
   height: 50px;
 }
-/* line 25, ../sass/_player.scss */
+/* line 33, ../sass/_player.scss */
 .region-persistent .streaming-menu {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -369,24 +419,105 @@ a:hover {
   top: -43px;
   left: -100px;
 }
-/* line 33, ../sass/_player.scss */
+/* line 41, ../sass/_player.scss */
 .region-persistent .streaming-menu a:hover {
   background: none !important;
 }
-/* line 38, ../sass/_player.scss */
+/* line 46, ../sass/_player.scss */
 .region-persistent iframe {
   border: 0px;
-  vertical-align: bottom;
-  height: 80px;
+  height: 60px;
+  width: 220px;
   overflow: hidden;
   overflow-x: hidden;
   overflow-y: hidden;
   padding: 0px !important;
   margin: 0px !important;
   position: relative;
-  top: -30px;
 }
-/* line 52, ../sass/_player.scss */
+/* line 60, ../sass/_player.scss */
 .region-persistent iframe, .region-persistent a {
   display: inline-block;
+}
+
+/* line 1, ../sass/_airtime.scss */
+#headerLiveHolder {
+  position: fixed;
+  top: 12px;
+  width: 700px !important;
+  margin-left: 240px;
+  font-family: 'DIN Next W02 Medium';
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+/* line 9, ../sass/_airtime.scss */
+#headerLiveHolder h4 {
+  display: none;
+}
+/* line 13, ../sass/_airtime.scss */
+#headerLiveHolder li {
+  display: inline-block;
+  font-size: 12px !important;
+  line-height: 18px !important;
+}
+/* line 19, ../sass/_airtime.scss */
+#headerLiveHolder .current {
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+/* line 25, ../sass/_airtime.scss */
+#headerLiveHolder .next {
+  width: auto !important;
+  display: block;
+}
+/* line 31, ../sass/_airtime.scss */
+#headerLiveHolder .time-elapsed,
+#headerLiveHolder .time-remaining {
+  position: relative;
+  display: inline-block;
+  right: auto;
+  margin: 0 0 0 10px;
+  float: right;
+}
+
+/* line 40, ../sass/_airtime.scss */
+#headerLiveHolder ul li.current {
+  color: black;
+}
+
+/* line 44, ../sass/_airtime.scss */
+#headerLiveHolder ul li span#time-elapsed {
+  right: auto;
+}
+
+/* line 48, ../sass/_airtime.scss */
+#headerLiveHolder ul li span#time-elapsed:before {
+  content: "e. ";
+}
+
+/* line 52, ../sass/_airtime.scss */
+#headerLiveHolder ul li span#time-remaining:before {
+  content: "r. ";
+}
+
+/*
+ * Bootstrap etc. Override styles
+ */
+/* line 5, ../sass/_override.scss */
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+  display: block !important;
+}
+
+/* line 8, ../sass/_override.scss */
+ul.nav li.dropdown ul.dropdown-menu {
+  margin-top: 0;
+}
+
+/* line 12, ../sass/_override.scss */
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
 }

@@ -1,5 +1,6 @@
 body {
   //display: none;
+  padding-top: 60px;
 }
 
 a, a:link, a:visited {
@@ -52,15 +53,16 @@ a:hover {
 .region-navigation .navbar-collapse ul.navbar-nav {
   //margin-top: 0px !important;
   //display: inline-block;
+  @include header-font;
 }
 .logo {
   width: $logo_width;
   height: $logo_height;
   //background-color: pink;
   //background: #ffffff url("img_tree.png") no-repeat right top;
-  background: url('/sites/default/files/bcr-logo.gif') no-repeat;
+  background: url('../images/bcr-logo.gif') no-repeat;
   &:hover {
-    background: url('/sites/default/files/bcr-logo-hover.png') no-repeat;
+    background: url('../images/bcr-logo-hover.png') no-repeat;
   }
 }
 
@@ -86,7 +88,7 @@ a:hover {
         .tlkio {
           iframe {
             height: 400px !important;
-
+            
           }
         }
       }

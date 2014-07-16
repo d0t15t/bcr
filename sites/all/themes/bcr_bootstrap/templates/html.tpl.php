@@ -56,6 +56,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
+  <script type="text/javascript" src="http://fast.fonts.net/jsapi/ed30f232-f0d5-4b7c-b683-d3a52e6ec694.js"></script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">

@@ -103,18 +103,20 @@ function bcr_channels_grid_block_render() {
  */
 function bcr_player_block_render() {
 
+  global $base_url;
+
 //  $player = file_get_contents(drupal_get_path('module', 'bcr_player') . '/bcr-jplayer.inc');
 //
 //  return $player;
   $streaming = module_invoke('menu', 'block_view', 'menu-streams');
   $block = '<div class="streaming-menu">';
-  $block .= render($streaming['content']);
+  $block .= //render($streaming['content']);
   $block .= '</div>';
 //  print $block['content'];
 
   return '<div class="container">
-            <a class="logo logo-rel" href="/"><div id="logo-element"><img class="bcr-logo" src="sites/default/files/bcr-logo.png"></div></a>
-            <iframe  src="/sites/default/files/jplayer/bcr-jplayer.html"></iframe>
+            
+            <iframe  src="'. $base_url .'/sites/default/files/jplayer/bcr-jplayer.html"></iframe>
             ' . $block . '
           </div>
   ';

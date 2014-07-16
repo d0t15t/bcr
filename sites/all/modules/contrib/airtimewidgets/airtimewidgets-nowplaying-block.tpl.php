@@ -10,4 +10,6 @@
 
 ?>
 
-<div id="headerLiveHolder" style="border: 1px solid #999999; padding: 10px;"></div>
+<div class="container">
+  <div id="headerLiveHolder"></div>
+</div>

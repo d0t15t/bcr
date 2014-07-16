@@ -8,3 +8,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 ul.nav li.dropdown ul.dropdown-menu {
   margin-top: 0;
 }
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+}
