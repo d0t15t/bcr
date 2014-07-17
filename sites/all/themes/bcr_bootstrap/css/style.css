@@ -409,7 +409,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 14, ../sass/_page.scss */
 .page-header {
-  font-size: 110px;
+  font-size: 92px;
   text-align: right;
   line-height: 114px;
   border: 0;
@@ -966,4 +966,9 @@ ul.nav li.dropdown ul.dropdown-menu {
 /* line 19, ../sass/_override.scss */
 .navbar {
   min-height: 30px;
+}
+
+/* line 24, ../sass/_override.scss */
+.node-type-channel .img-responsive {
+  max-width: none;
 }
