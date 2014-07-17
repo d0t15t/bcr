@@ -74,11 +74,27 @@ a:hover {
 }
 
 .node-type-channel {
-  background: url('../images/bg-blue.png') no-repeat top left;
+  background: no-repeat top left;
   background-size: 100% 700px;
+  &.bg-blue {
+    background-image: url('../images/bg-blue.png');
+  }
+  &.bg-green {
+    background-image: url('../images/bg-green.png');
+  }
+  &.bg-purple {
+    background-image: url('../images/bg-purple.png');
+  }
+  &.bg-yellow {
+    background-image: url('../images/bg-yellow.png');
+  }
+  &.bg-red {
+    background-image: url('../images/bg-red.png');
+  }
 }
 
-.main-container {
+.main-container.container {
+  padding-bottom: 80px;
   // front page design
   .panels-flexible-4 {
     // upper left

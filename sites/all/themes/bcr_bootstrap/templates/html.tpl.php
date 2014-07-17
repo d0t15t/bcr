@@ -43,6 +43,7 @@
  *
  * @ingroup themeable
  */
+
 ?><!DOCTYPE html>
 <html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces;?>>
 <head profile="<?php print $grddl_profile; ?>">
@@ -56,8 +57,8 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
-  <script type="text/javascript" src="http://fast.fonts.net/jsapi/ed30f232-f0d5-4b7c-b683-d3a52e6ec694.js"></script>
 </head>
+
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>

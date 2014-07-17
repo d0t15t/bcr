@@ -77,36 +77,60 @@ a:hover {
 
 /* line 76, ../sass/_body.scss */
 .node-type-channel {
-  background: url("../images/bg-blue.png") no-repeat top left;
+  background: no-repeat top left;
   background-size: 100% 700px;
 }
-
+/* line 79, ../sass/_body.scss */
+.node-type-channel.bg-blue {
+  background-image: url("../images/bg-blue.png");
+}
+/* line 82, ../sass/_body.scss */
+.node-type-channel.bg-green {
+  background-image: url("../images/bg-green.png");
+}
+/* line 85, ../sass/_body.scss */
+.node-type-channel.bg-purple {
+  background-image: url("../images/bg-purple.png");
+}
 /* line 88, ../sass/_body.scss */
-.main-container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-schedule-today-panel-pane-1 .view-bcr-schedule-today {
+.node-type-channel.bg-yellow {
+  background-image: url("../images/bg-yellow.png");
+}
+/* line 91, ../sass/_body.scss */
+.node-type-channel.bg-red {
+  background-image: url("../images/bg-red.png");
+}
+
+/* line 96, ../sass/_body.scss */
+.main-container.container {
+  padding-bottom: 80px;
+}
+/* line 104, ../sass/_body.scss */
+.main-container.container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-schedule-today-panel-pane-1 .view-bcr-schedule-today {
   width: 75%;
   margin: 0px auto 0px auto;
   padding-bottom: 30px;
 }
-/* line 95, ../sass/_body.scss */
-.main-container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-blocks-bcr-chat {
+/* line 111, ../sass/_body.scss */
+.main-container.container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-blocks-bcr-chat {
   margin: 0px auto 0px auto;
   width: 75%;
 }
-/* line 99, ../sass/_body.scss */
-.main-container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-blocks-bcr-chat .tlkio iframe {
+/* line 115, ../sass/_body.scss */
+.main-container.container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-blocks-bcr-chat .tlkio iframe {
   height: 400px !important;
 }
-/* line 108, ../sass/_body.scss */
-.main-container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside {
+/* line 124, ../sass/_body.scss */
+.main-container.container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside {
   border: 1px solid #ccc;
   padding: 20px;
 }
-/* line 114, ../sass/_body.scss */
-.main-container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside .view-bcr-blog-recent .views-row {
+/* line 130, ../sass/_body.scss */
+.main-container.container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside .view-bcr-blog-recent .views-row {
   margin: 0px 0px 30px 0px;
 }
-/* line 116, ../sass/_body.scss */
-.main-container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside .view-bcr-blog-recent .views-row .field-type-image {
+/* line 132, ../sass/_body.scss */
+.main-container.container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside .view-bcr-blog-recent .views-row .field-type-image {
   float: right;
   padding: 0px 0px 10px 20px;
 }
