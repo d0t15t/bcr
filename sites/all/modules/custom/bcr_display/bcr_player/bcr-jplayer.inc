@@ -32,6 +32,7 @@
 
     <div id="jp_interface_1" class="jp-interface">
 
+      <span class="bcr-logo"></span>
 
       <ul class="jp-controls">
         <li><a href="#" class="jp-play" tabindex="1">play</a></li>

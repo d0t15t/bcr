@@ -27,31 +27,10 @@
 ?>
 <?php if ($page['logo'] || $page['site_name'] || $page['primary_nav'] || $page['secondary_nav'] || $content): ?>
   <header<?php print $attributes; ?>>
-    <?php if ($content_attributes): ?><div<?php print $content_attributes; ?>><?php endif; ?>
-    <div class="navbar-header logo-wrapper">
-      <?php if ($page['logo']): ?>
-<!--        <a class="logo navbar-btn pull-left" href="--><?php //print $page['front_page']; ?><!--" title="--><?php //print t('Home'); ?><!--">-->
-
-<!--          <img src="--><?php //print $page['logo']; ?><!--" alt="--><?php //print t('Home'); ?><!--" />-->
-
-
-
-<!--        </a>-->
-      <?php endif; ?>
-      <?php if ($page['site_name']): ?>
-        <a class="name navbar-brand" href="<?php print $page['front_page']; ?>" title="<?php print t('Home'); ?>"><?php print $page['site_name']; ?></a>
-      <?php endif; ?>
-      <?php if ($page['primary_nav'] || $page['secondary_nav'] || $content): ?>
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <?php endif; ?>
-    </div>
     <?php if ($page['primary_nav'] || $page['secondary_nav'] || $content): ?>
-    <div class="navbar-collapse collapse menu-wrapper">
+    <div class="menu-wrapper">
+      <a class="name navbar-brand" href="<?php print $page['front_page']; ?>" title="<?php print t('Home'); ?>"><?php print $page['site_name']; ?></a>
+
       <nav role="navigation">
         <?php print render($page['primary_nav']); ?>
         <?php print render($page['secondary_nav']); ?>
@@ -59,6 +38,5 @@
       </nav>
     </div>
     <?php endif; ?>
-    <?php if ($content_attributes): ?></div><?php endif; ?>
   </header>
 <?php endif; ?>

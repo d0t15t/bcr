@@ -2,6 +2,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   @include header-font;
+  color: black;
 }
 
 .main-container {
@@ -13,6 +14,6 @@ h1, h2, h3, h4, h5, h6 {
 .page-header {
   font-size: 110px;
   text-align: right;
-  line-height: 118px;
+  line-height: 114px;
   border: 0;
 }

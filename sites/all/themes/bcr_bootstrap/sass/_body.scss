@@ -1,6 +1,7 @@
 body {
   //display: none;
-  padding-top: 60px;
+  margin-top: 60px;
+  overflow-x: hidden;
 }
 
 a, a:link, a:visited {
@@ -66,7 +67,10 @@ a:hover {
   }
 }
 
-
+.node-type-channel {
+  background: url('../images/bg-blue.png') no-repeat top left;
+  background-size: 100% 700px;
+}
 
 .main-container {
   // front page design

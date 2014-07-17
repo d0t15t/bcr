@@ -2,32 +2,33 @@
 /* import partials */
 /* line 1, ../sass/_body.scss */
 body {
-  padding-top: 60px;
+  margin-top: 60px;
+  overflow-x: hidden;
 }
 
-/* line 6, ../sass/_body.scss */
+/* line 7, ../sass/_body.scss */
 a, a:link, a:visited {
   color: black !important;
 }
 
-/* line 9, ../sass/_body.scss */
+/* line 10, ../sass/_body.scss */
 a:hover {
   color: #4affd7 !important;
   text-decoration: none !important;
   text-shadow: none !important;
 }
 
-/* line 26, ../sass/_body.scss */
+/* line 27, ../sass/_body.scss */
 #block-menu-menu-streams ul {
   margin: 0px;
   padding: 0px;
 }
-/* line 30, ../sass/_body.scss */
+/* line 31, ../sass/_body.scss */
 #block-menu-menu-streams li a:hover {
   background: none !important;
 }
 
-/* line 37, ../sass/_body.scss */
+/* line 38, ../sass/_body.scss */
 .logo-wrapper, .logo {
   height: 130px !important;
   overflow: hidden;
@@ -37,59 +38,65 @@ a:hover {
   z-index: 1;
 }
 
-/* line 45, ../sass/_body.scss */
+/* line 46, ../sass/_body.scss */
 .logo-wrapper {
   display: none;
 }
 
-/* line 48, ../sass/_body.scss */
+/* line 49, ../sass/_body.scss */
 .logo-wrapper, .menu-wrapper {
   float: none;
 }
 
-/* line 53, ../sass/_body.scss */
+/* line 54, ../sass/_body.scss */
 .region-navigation .navbar-collapse ul.navbar-nav {
   font-family: 'DIN Next W02 Medium';
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
 
-/* line 58, ../sass/_body.scss */
+/* line 59, ../sass/_body.scss */
 .logo {
   width: 200px;
   height: 200px;
   background: url("../images/bcr-logo.gif") no-repeat;
 }
-/* line 64, ../sass/_body.scss */
+/* line 65, ../sass/_body.scss */
 .logo:hover {
   background: url("../images/bcr-logo-hover.png") no-repeat;
 }
 
-/* line 78, ../sass/_body.scss */
+/* line 70, ../sass/_body.scss */
+.node-type-channel {
+  background: url("../images/bg-blue.png") no-repeat top left;
+  background-size: 100% 700px;
+}
+
+/* line 82, ../sass/_body.scss */
 .main-container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-schedule-today-panel-pane-1 .view-bcr-schedule-today {
   width: 75%;
   margin: 0px auto 0px auto;
   padding-bottom: 30px;
 }
-/* line 85, ../sass/_body.scss */
+/* line 89, ../sass/_body.scss */
 .main-container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-blocks-bcr-chat {
   margin: 0px auto 0px auto;
   width: 75%;
 }
-/* line 89, ../sass/_body.scss */
+/* line 93, ../sass/_body.scss */
 .main-container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-blocks-bcr-chat .tlkio iframe {
   height: 400px !important;
 }
-/* line 98, ../sass/_body.scss */
+/* line 102, ../sass/_body.scss */
 .main-container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside {
   border: 1px solid #ccc;
   padding: 20px;
 }
-/* line 104, ../sass/_body.scss */
+/* line 108, ../sass/_body.scss */
 .main-container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside .view-bcr-blog-recent .views-row {
   margin: 0px 0px 30px 0px;
 }
-/* line 106, ../sass/_body.scss */
+/* line 110, ../sass/_body.scss */
 .main-container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside .view-bcr-blog-recent .views-row .field-type-image {
   float: right;
   padding: 0px 0px 10px 20px;
@@ -314,8 +321,21 @@ a:hover {
 .menu-wrapper .menu .leaf-youtube-link, .menu-wrapper .menu .leaf-instagram-link, .menu-wrapper .menu .leaf-mail-link {
   margin-top: 3px;
 }
+/* line 41, ../sass/_menus.scss */
+.menu-wrapper .navbar-brand {
+  display: block;
+  width: 150px;
+  height: 80px;
+  background: url("../images/bcr-logo.png") top left no-repeat;
+  background-size: 150px;
+  margin-bottom: 20px;
+}
+/* line 47, ../sass/_menus.scss */
+.menu-wrapper .navbar-brand:hover {
+  background-position: bottom left;
+}
 
-/* line 43, ../sass/_menus.scss */
+/* line 55, ../sass/_menus.scss */
 .region-navigation {
   background: none;
   border: 0px;
@@ -323,41 +343,51 @@ a:hover {
   padding-right: 0px;
   margin-top: 0px !important;
 }
-/* line 50, ../sass/_menus.scss */
-.region-navigation .navbar-collapse ul.navbar-nav {
+/* line 62, ../sass/_menus.scss */
+.region-navigation .menu-wrapper {
+  position: fixed;
+  top: 100px;
+  margin-left: 20px;
+  z-index: 10;
+}
+/* line 69, ../sass/_menus.scss */
+.region-navigation ul.navbar-nav {
   font-family: 'DIN Next W02 Medium';
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  position: fixed;
-  top: 100px;
   z-index: 10;
 }
-/* line 59, ../sass/_menus.scss */
-.region-navigation .navbar-collapse ul.navbar-nav li {
+/* line 74, ../sass/_menus.scss */
+.region-navigation ul.navbar-nav li {
   display: block;
   margin: 5px 0;
   float: none;
   font-size: 14px;
 }
-/* line 66, ../sass/_menus.scss */
-.region-navigation .navbar-collapse ul.navbar-nav li a {
+/* line 81, ../sass/_menus.scss */
+.region-navigation ul.navbar-nav li a {
   padding: 3px 0px 1px 0px !important;
   margin-right: 20px;
 }
-/* line 71, ../sass/_menus.scss */
-.region-navigation .navbar-collapse ul.navbar-nav li.active-trail a.active {
+/* line 84, ../sass/_menus.scss */
+.region-navigation ul.navbar-nav li a:hover {
+  color: black !important;
+  text-decoration: underline !important;
+}
+/* line 90, ../sass/_menus.scss */
+.region-navigation ul.navbar-nav li.active-trail a.active {
   background: none !important;
   text-decoration: underline !important;
 }
-/* line 86, ../sass/_menus.scss */
+/* line 105, ../sass/_menus.scss */
 .region-navigation #block-menu-menu-main-2 .menu .leaf a {
   padding-top: 0px !important;
 }
-/* line 88, ../sass/_menus.scss */
+/* line 107, ../sass/_menus.scss */
 .region-navigation #block-menu-menu-main-2 .menu .leaf a:hover {
   background: none;
 }
-/* line 95, ../sass/_menus.scss */
+/* line 114, ../sass/_menus.scss */
 .region-navigation a {
   font-size: .9em;
   letter-spacing: 1px;
@@ -369,18 +399,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'DIN Next W02 Medium';
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  color: black;
 }
 
-/* line 8, ../sass/_page.scss */
+/* line 9, ../sass/_page.scss */
 .main-container .row {
   margin-left: 225px;
 }
 
-/* line 13, ../sass/_page.scss */
+/* line 14, ../sass/_page.scss */
 .page-header {
   font-size: 110px;
   text-align: right;
-  line-height: 118px;
+  line-height: 114px;
   border: 0;
 }
 
@@ -501,6 +532,416 @@ h1, h2, h3, h4, h5, h6 {
   content: "r. ";
 }
 
+/* import compass */
+/*
+ * Skin for jPlayer Plugin (jQuery JavaScript Library)
+ * http://www.happyworm.com/jquery/jplayer
+ *
+ * Skin Name: Blue Monday
+ *
+ * Copyright (c) 2010 Happyworm Ltd
+ * Dual licensed under the MIT and GPL licenses.
+ *  - http://www.opensource.org/licenses/mit-license.php
+ *  - http://www.gnu.org/copyleft/gpl.html
+ *
+ * Author: Silvia Benvenuti
+ * Skin Version: 3.0 (jPlayer 2.0.0)
+ * Date: 20th December 2010
+ */
+/* line 29, ../sass/bcr-jplayer.scss */
+.bcr-logo {
+  display: inline-block;
+  width: 39px;
+  height: 38px;
+  background: url("../images/logospot.png") no-repeat;
+  background-size: 39px;
+  vertical-align: middle;
+}
+
+/* line 38, ../sass/bcr-jplayer.scss */
+.home-link {
+  height: 20px;
+  width: 20px;
+}
+
+/* line 50, ../sass/bcr-jplayer.scss */
+.jp-audio {
+  display: inline-block;
+  top: 0px;
+}
+/* line 55, ../sass/bcr-jplayer.scss */
+.jp-audio .jp-controls {
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+/* line 61, ../sass/bcr-jplayer.scss */
+.jp-audio .jp-controls li {
+  display: inline-block;
+  list-style: none;
+  position: absolute;
+  top: -9px;
+}
+/* line 67, ../sass/bcr-jplayer.scss */
+.jp-audio .jp-controls li.play-control {
+  left: 20px;
+}
+/* line 71, ../sass/bcr-jplayer.scss */
+.jp-audio .jp-controls li.vol-control {
+  left: 70px;
+}
+/* line 75, ../sass/bcr-jplayer.scss */
+.jp-audio .jp-controls li a {
+  vertical-align: middle;
+  position: absolute;
+}
+/* line 81, ../sass/bcr-jplayer.scss */
+.jp-audio .jp-controls li .jp-play {
+  width: 20px;
+  height: 20px;
+  background: url("../images/jplayer-buttons/player-button--play.png") no-repeat center;
+  background-size: 16px;
+}
+/* line 87, ../sass/bcr-jplayer.scss */
+.jp-audio .jp-controls li .jp-pause {
+  width: 20px;
+  height: 20px;
+  background: url("../images/jplayer-buttons/player-button--pause.png") no-repeat center;
+  background-size: 17px;
+}
+/* line 93, ../sass/bcr-jplayer.scss */
+.jp-audio .jp-controls li .jp-mute {
+  width: 22px;
+  height: 20px;
+  background: url("../images/jplayer-buttons/vol-button--off.png") no-repeat center;
+  background-size: 22px;
+}
+/* line 99, ../sass/bcr-jplayer.scss */
+.jp-audio .jp-controls li .jp-unmute {
+  width: 23px;
+  height: 20px;
+  background: url("../images/jplayer-buttons/vol-button--on.png") no-repeat center;
+  background-size: 23px;
+}
+
+/* line 114, ../sass/bcr-jplayer.scss */
+div.jp-audio,
+div.jp-video {
+  /* Edit the font-size to counteract inherited font sizing.
+   * Eg. 1.25em = 1 / 0.8em
+   */
+  font-size: 1em;
+  /* No parent CSS that can effect the size in these demos */
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* line 128, ../sass/bcr-jplayer.scss */
+div.label {
+  font-size: 1em;
+  font-weight: bold;
+  text-indent: 5px;
+}
+
+/* line 135, ../sass/bcr-jplayer.scss */
+div.jp-interface ul.jp-controls a {
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+/* line 140, ../sass/bcr-jplayer.scss */
+a.jp-stop {
+  background: url("jplayer.blue.monday.jpg") 0 -83px no-repeat;
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+}
+
+/* line 146, ../sass/bcr-jplayer.scss */
+a.jp-stop:hover {
+  background: url("jplayer.blue.monday.jpg") -29px -83px no-repeat;
+}
+
+/* line 149, ../sass/bcr-jplayer.scss */
+div.jp-audio div.jp-type-playlist a.jp-previous {
+  left: 20px;
+  top: 26px;
+}
+
+/* line 153, ../sass/bcr-jplayer.scss */
+div.jp-video div.jp-type-playlist a.jp-previous {
+  top: 21px;
+}
+
+/* line 156, ../sass/bcr-jplayer.scss */
+div.jp-video-270p div.jp-type-playlist a.jp-previous {
+  left: 192px;
+}
+
+/* line 159, ../sass/bcr-jplayer.scss */
+div.jp-video-360p div.jp-type-playlist a.jp-previous {
+  left: 272px;
+}
+
+/* line 162, ../sass/bcr-jplayer.scss */
+a.jp-previous {
+  background: url("jplayer.blue.monday.jpg") 0 -112px no-repeat;
+  width: 28px;
+  height: 28px;
+}
+
+/* line 167, ../sass/bcr-jplayer.scss */
+a.jp-previous:hover {
+  background: url("jplayer.blue.monday.jpg") -29px -112px no-repeat;
+}
+
+/* line 170, ../sass/bcr-jplayer.scss */
+div.jp-audio div.jp-type-playlist a.jp-next {
+  left: 88px;
+  top: 26px;
+}
+
+/* line 174, ../sass/bcr-jplayer.scss */
+div.jp-video div.jp-type-playlist a.jp-next {
+  top: 21px;
+}
+
+/* line 177, ../sass/bcr-jplayer.scss */
+div.jp-video-270p div.jp-type-playlist a.jp-next {
+  left: 260px;
+}
+
+/* line 180, ../sass/bcr-jplayer.scss */
+div.jp-video-360p div.jp-type-playlist a.jp-next {
+  left: 340px;
+}
+
+/* line 183, ../sass/bcr-jplayer.scss */
+a.jp-next {
+  background: url("jplayer.blue.monday.jpg") 0 -141px no-repeat;
+  width: 28px;
+  height: 28px;
+}
+
+/* line 188, ../sass/bcr-jplayer.scss */
+a.jp-next:hover {
+  background: url("jplayer.blue.monday.jpg") -29px -141px no-repeat;
+}
+
+/* line 191, ../sass/bcr-jplayer.scss */
+div.jp-progress {
+  position: absolute;
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+/* line 196, ../sass/bcr-jplayer.scss */
+div.jp-audio div.jp-type-single div.jp-progress {
+  top: 32px;
+  left: 130px;
+  width: 122px;
+  height: 15px;
+}
+
+/* line 202, ../sass/bcr-jplayer.scss */
+div.jp-audio div.jp-type-playlist div.jp-progress {
+  top: 32px;
+  left: 164px;
+  width: 122px;
+  height: 15px;
+}
+
+/* line 208, ../sass/bcr-jplayer.scss */
+div.jp-video div.jp-progress {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+}
+
+/* line 214, ../sass/bcr-jplayer.scss */
+div.jp-seek-bar {
+  background: url("jplayer.blue.monday.jpg") 0 -202px repeat-x;
+  width: 0px;
+  /* height:15px; */
+  height: 100%;
+  cursor: pointer;
+}
+
+/* line 221, ../sass/bcr-jplayer.scss */
+div.jp-play-bar {
+  background: url("jplayer.blue.monday.jpg") 0 -218px repeat-x;
+  width: 0px;
+  /* height:15px; */
+  height: 100%;
+}
+
+/* The seeking class is added/removed inside jPlayer */
+/* line 229, ../sass/bcr-jplayer.scss */
+div.jp-seeking-bg {
+  background: url("pbar-ani.gif");
+}
+
+/* line 234, ../sass/bcr-jplayer.scss */
+div.jp-volume-bar {
+  position: absolute;
+  overflow: hidden;
+  background: url("jplayer.blue.monday.jpg") 0 -250px repeat-x;
+  width: 46px;
+  height: 5px;
+  cursor: pointer;
+}
+
+/* line 242, ../sass/bcr-jplayer.scss */
+div.jp-audio div.jp-type-single div.jp-volume-bar {
+  top: 37px;
+  left: 302px;
+}
+
+/* line 246, ../sass/bcr-jplayer.scss */
+div.jp-audio div.jp-type-playlist div.jp-volume-bar {
+  top: 37px;
+  left: 324px;
+}
+
+/* line 252, ../sass/bcr-jplayer.scss */
+div.jp-video div.jp-volume-bar {
+  top: 32px;
+}
+
+/* line 255, ../sass/bcr-jplayer.scss */
+div.jp-video-270p div.jp-type-single div.jp-volume-bar {
+  left: 332px;
+}
+
+/* line 258, ../sass/bcr-jplayer.scss */
+div.jp-video-270p div.jp-type-playlist div.jp-volume-bar {
+  left: 391px;
+}
+
+/* line 261, ../sass/bcr-jplayer.scss */
+div.jp-video-360p div.jp-type-single div.jp-volume-bar {
+  left: 412px;
+}
+
+/* line 264, ../sass/bcr-jplayer.scss */
+div.jp-video-360p div.jp-type-playlist div.jp-volume-bar {
+  left: 471px;
+}
+
+/* line 267, ../sass/bcr-jplayer.scss */
+div.jp-volume-bar-value {
+  background: url("jplayer.blue.monday.jpg") 0 -256px repeat-x;
+  width: 0px;
+  height: 5px;
+}
+
+/* line 273, ../sass/bcr-jplayer.scss */
+div.jp-current-time,
+div.jp-duration {
+  position: absolute;
+  font-size: .64em;
+  font-style: oblique;
+}
+
+/* line 278, ../sass/bcr-jplayer.scss */
+div.jp-duration {
+  text-align: right;
+}
+
+/* line 282, ../sass/bcr-jplayer.scss */
+div.jp-audio div.jp-type-single div.jp-current-time,
+div.jp-audio div.jp-type-single div.jp-duration {
+  top: 49px;
+  left: 130px;
+  width: 122px;
+}
+
+/* line 288, ../sass/bcr-jplayer.scss */
+div.jp-audio div.jp-type-playlist div.jp-current-time,
+div.jp-audio div.jp-type-playlist div.jp-duration {
+  top: 49px;
+  left: 164px;
+  width: 122px;
+}
+
+/* line 296, ../sass/bcr-jplayer.scss */
+div.jp-playlist {
+  /* width:418px; */
+  width: 100%;
+  background-color: #ccc;
+  /* border:1px solid #009be3; */
+  border-top: none;
+}
+
+/* line 304, ../sass/bcr-jplayer.scss */
+div.jp-playlist ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  /* background-color:#ccc; */
+  /* border:1px solid #009be3; */
+  /* border-top:none; */
+  /* width:378px; */
+  font-size: .72em;
+}
+
+/* line 316, ../sass/bcr-jplayer.scss */
+div.jp-type-single div.jp-playlist li {
+  padding: 5px 0 5px 20px;
+  font-weight: bold;
+}
+
+/* line 320, ../sass/bcr-jplayer.scss */
+div.jp-type-playlist div.jp-playlist li {
+  padding: 5px 0 4px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+div.jp-video div.jp-playlist li {
+  padding:5px 0 5px 20px;
+  font-weight:bold;
+}
+*/
+/* line 330, ../sass/bcr-jplayer.scss */
+div.jp-type-playlist div.jp-playlist li.jp-playlist-last {
+  padding: 5px 0 5px 20px;
+  border-bottom: none;
+}
+
+/* line 334, ../sass/bcr-jplayer.scss */
+div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 8px;
+}
+
+/* line 339, ../sass/bcr-jplayer.scss */
+div.jp-type-playlist div.jp-playlist a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* line 343, ../sass/bcr-jplayer.scss */
+div.jp-type-playlist div.jp-playlist a:hover {
+  color: #0d88c1;
+}
+
+/* line 346, ../sass/bcr-jplayer.scss */
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
+  color: #0d88c1;
+}
+
+/* line 349, ../sass/bcr-jplayer.scss */
+div.jp-type-playlist div.jp-playlist div.jp-free-media {
+  display: inline;
+  margin-left: 20px;
+}
+
 /*
  * Bootstrap etc. Override styles
  */
@@ -520,4 +961,9 @@ ul.nav li.dropdown ul.dropdown-menu {
   margin: 0 auto;
   padding: 0 10px;
   position: relative;
+}
+
+/* line 19, ../sass/_override.scss */
+.navbar {
+  min-height: 30px;
 }

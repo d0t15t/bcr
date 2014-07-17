@@ -37,6 +37,18 @@ body {
       margin-top: 3px;
     }
   }
+
+  .navbar-brand {
+    display: block;
+    width: 150px;
+    height: 80px;
+    background: url('../images/bcr-logo.png') top left no-repeat;
+    background-size: 150px;
+    &:hover {
+      background-position: bottom left;
+    }
+    margin-bottom: 20px;
+  }
 }
 
 // OVERRIDE
@@ -46,34 +58,41 @@ body {
   padding-left: 0px;
   padding-right: 0px;
   margin-top: 0px !important;
-  .navbar-collapse {
-    ul.navbar-nav {
-      //float: none;
-      @include header-font;
-      
 
-      position: fixed;
-      top: 100px;
-      z-index: 10;
+  .menu-wrapper {
+    position: fixed;
+    top: 100px;
+    margin-left: 20px;
+    z-index: 10;
+  }
 
-      li {
-        display: block;
-        margin: 5px 0;
-        float: none;
-        font-size: 14px;
-      }
+  ul.navbar-nav {
+    //float: none;
+    @include header-font;
+    z-index: 10;
 
-      li a {
-        padding: 3px 0px 1px 0px !important;
-        margin-right: 20px;
-      }
-      li.active-trail {
-        a.active {
-          background: none !important;
-          text-decoration: underline !important;
-        }
+    li {
+      display: block;
+      margin: 5px 0;
+      float: none;
+      font-size: 14px;
+    }
+
+    li a {
+      padding: 3px 0px 1px 0px !important;
+      margin-right: 20px;
+      &:hover {
+        color: black !important;
+        text-decoration: underline !important;
       }
     }
+    li.active-trail {
+      a.active {
+        background: none !important;
+        text-decoration: underline !important;
+      }
+    }
+
   }
 
   #block-menu-menu-main-2 {
