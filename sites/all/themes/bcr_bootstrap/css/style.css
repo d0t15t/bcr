@@ -423,12 +423,12 @@ a:hover {
 /* line 16, ../sass/_page.scss */
 .field-item {
   font-size: 16px;
-  line-height: 2em;
+  line-height: 1.6em;
 }
 
 /* line 21, ../sass/_page.scss */
 .panel-flexible .panel-separator {
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 /* line 23, ../sass/_page.scss */
 .panel-flexible .panel-separator a {
