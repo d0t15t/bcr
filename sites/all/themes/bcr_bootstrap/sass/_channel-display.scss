@@ -42,9 +42,10 @@ $gutter_adjust: 20px;
           vertical-align: middle;
           line-height: $channel_block_height;
           text-transform: uppercase;
-          font-size: 1.1em !important;
-          font-weight: 600;
+          font-size: 1em !important;
+          font-weight: normal;
           letter-spacing: 1px;
+          @include header_font;
         }
         a, a:link, a:visited {
           color: white !important;

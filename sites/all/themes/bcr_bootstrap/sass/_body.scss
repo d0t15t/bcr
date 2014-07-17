@@ -4,6 +4,12 @@ body {
   overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  @include header-font;
+  color: black;
+  font-weight: normal !important;
+}
+
 a, a:link, a:visited {
   color: black !important;
 }
