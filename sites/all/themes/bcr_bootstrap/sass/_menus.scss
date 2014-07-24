@@ -79,18 +79,24 @@ body {
     }
 
     li a {
-      padding: 3px 0px 1px 0px !important;
+      padding: 3px 0px 0px 0px !important;
+      margin: 5px 0;
       text-decoration: none !important;
       margin-right: 20px;
+      display: inline-block;
+      line-height: 1em;
+      border-bottom: 1px solid transparent;
       &:hover {
         color: black !important;
-        text-decoration: underline !important;
+        text-decoration: none !important;
+        border-bottom: 1px solid rgba(0,0,0,0.5);
       }
     }
     li.active-trail {
       a.active {
         background: none !important;
-        text-decoration: underline !important;
+        text-decoration: none !important;
+        border-bottom: 1px solid black;
       }
     }
 

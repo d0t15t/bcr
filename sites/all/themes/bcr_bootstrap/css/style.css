@@ -9,40 +9,42 @@ body {
 body, html {
   width: 100%;
   overflow-x: hidden;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 11, ../sass/_body.scss */
+/* line 12, ../sass/_body.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'DIN Next W02 Medium';
+  font-family: 'DIN Next W02 Medium', 'DIN Alternate', 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  font-weight: bold;
   color: black;
   font-weight: normal !important;
 }
 
-/* line 17, ../sass/_body.scss */
+/* line 18, ../sass/_body.scss */
 a, a:link, a:visited {
   color: black !important;
 }
 
-/* line 20, ../sass/_body.scss */
+/* line 21, ../sass/_body.scss */
 a:hover {
   color: #4affd7 !important;
   text-decoration: none !important;
   text-shadow: none !important;
 }
 
-/* line 37, ../sass/_body.scss */
+/* line 38, ../sass/_body.scss */
 #block-menu-menu-streams ul {
   margin: 0px;
   padding: 0px;
 }
-/* line 41, ../sass/_body.scss */
+/* line 42, ../sass/_body.scss */
 #block-menu-menu-streams li a:hover {
   background: none !important;
 }
 
-/* line 48, ../sass/_body.scss */
+/* line 49, ../sass/_body.scss */
 .logo-wrapper, .logo {
   height: 130px !important;
   overflow: hidden;
@@ -52,89 +54,90 @@ a:hover {
   z-index: 1;
 }
 
-/* line 56, ../sass/_body.scss */
+/* line 57, ../sass/_body.scss */
 .logo-wrapper {
   display: none;
 }
 
-/* line 59, ../sass/_body.scss */
+/* line 60, ../sass/_body.scss */
 .logo-wrapper, .menu-wrapper {
   float: none;
 }
 
-/* line 64, ../sass/_body.scss */
+/* line 65, ../sass/_body.scss */
 .region-navigation .navbar-collapse ul.navbar-nav {
-  font-family: 'DIN Next W02 Medium';
+  font-family: 'DIN Next W02 Medium', 'DIN Alternate', 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  font-weight: bold;
 }
 
-/* line 69, ../sass/_body.scss */
+/* line 70, ../sass/_body.scss */
 .logo {
   width: 200px;
   height: 200px;
   background: url("../images/bcr-logo.gif") no-repeat;
 }
-/* line 75, ../sass/_body.scss */
+/* line 76, ../sass/_body.scss */
 .logo:hover {
   background: url("../images/bcr-logo-hover.png") no-repeat;
 }
 
-/* line 80, ../sass/_body.scss */
+/* line 81, ../sass/_body.scss */
 .node-type-channel {
   background: no-repeat -1px -1px;
   background-size: 100% 700px;
 }
-/* line 83, ../sass/_body.scss */
+/* line 84, ../sass/_body.scss */
 .node-type-channel.bg-blue {
   background-image: url("../images/bg-blue.png");
 }
-/* line 86, ../sass/_body.scss */
+/* line 87, ../sass/_body.scss */
 .node-type-channel.bg-green {
   background-image: url("../images/bg-green.png");
 }
-/* line 89, ../sass/_body.scss */
+/* line 90, ../sass/_body.scss */
 .node-type-channel.bg-purple {
   background-image: url("../images/bg-purple.png");
 }
-/* line 92, ../sass/_body.scss */
+/* line 93, ../sass/_body.scss */
 .node-type-channel.bg-yellow {
   background-image: url("../images/bg-yellow.png");
 }
-/* line 95, ../sass/_body.scss */
+/* line 96, ../sass/_body.scss */
 .node-type-channel.bg-red {
   background-image: url("../images/bg-red.png");
 }
 
-/* line 100, ../sass/_body.scss */
+/* line 101, ../sass/_body.scss */
 .main-container.container {
   padding-bottom: 80px;
 }
-/* line 108, ../sass/_body.scss */
+/* line 109, ../sass/_body.scss */
 .main-container.container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-schedule-today-panel-pane-1 .view-bcr-schedule-today {
-  width: 75%;
+  width: 100%;
   margin: 0px auto 0px auto;
   padding-bottom: 30px;
 }
-/* line 115, ../sass/_body.scss */
+/* line 116, ../sass/_body.scss */
 .main-container.container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-blocks-bcr-chat {
   margin: 0px auto 0px auto;
-  width: 75%;
+  width: 100%;
 }
-/* line 119, ../sass/_body.scss */
+/* line 120, ../sass/_body.scss */
 .main-container.container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-blocks-bcr-chat .tlkio iframe {
   height: 400px !important;
 }
-/* line 128, ../sass/_body.scss */
+/* line 129, ../sass/_body.scss */
 .main-container.container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside {
   border: 1px solid #ccc;
   padding: 20px;
 }
-/* line 134, ../sass/_body.scss */
+/* line 135, ../sass/_body.scss */
 .main-container.container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside .view-bcr-blog-recent .views-row {
   margin: 0px 0px 30px 0px;
 }
-/* line 136, ../sass/_body.scss */
+/* line 137, ../sass/_body.scss */
 .main-container.container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside .view-bcr-blog-recent .views-row .field-type-image {
   float: right;
   padding: 0px 0px 10px 20px;
@@ -190,9 +193,10 @@ a:hover {
   font-size: 1em !important;
   font-weight: normal;
   letter-spacing: 1px;
-  font-family: 'DIN Next W02 Medium';
+  font-family: 'DIN Next W02 Medium', 'DIN Alternate', 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  font-weight: bold;
 }
 /* line 50, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a, .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a:link, .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a:visited {
@@ -393,9 +397,10 @@ a:hover {
 }
 /* line 69, ../sass/_menus.scss */
 .region-navigation ul.navbar-nav {
-  font-family: 'DIN Next W02 Medium';
+  font-family: 'DIN Next W02 Medium', 'DIN Alternate', 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  font-weight: bold;
   z-index: 10;
 }
 /* line 74, ../sass/_menus.scss */
@@ -407,29 +412,35 @@ a:hover {
 }
 /* line 81, ../sass/_menus.scss */
 .region-navigation ul.navbar-nav li a {
-  padding: 3px 0px 1px 0px !important;
+  padding: 3px 0px 0px 0px !important;
+  margin: 5px 0;
   text-decoration: none !important;
   margin-right: 20px;
+  display: inline-block;
+  line-height: 1em;
+  border-bottom: 1px solid transparent;
 }
-/* line 85, ../sass/_menus.scss */
+/* line 89, ../sass/_menus.scss */
 .region-navigation ul.navbar-nav li a:hover {
   color: black !important;
-  text-decoration: underline !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
-/* line 91, ../sass/_menus.scss */
+/* line 96, ../sass/_menus.scss */
 .region-navigation ul.navbar-nav li.active-trail a.active {
   background: none !important;
-  text-decoration: underline !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid black;
 }
-/* line 106, ../sass/_menus.scss */
+/* line 112, ../sass/_menus.scss */
 .region-navigation #block-menu-menu-main-2 .menu .leaf a {
   padding-top: 0px !important;
 }
-/* line 108, ../sass/_menus.scss */
+/* line 114, ../sass/_menus.scss */
 .region-navigation #block-menu-menu-main-2 .menu .leaf a:hover {
   background: none;
 }
-/* line 115, ../sass/_menus.scss */
+/* line 121, ../sass/_menus.scss */
 .region-navigation a {
   font-size: .9em;
   letter-spacing: 1px;
@@ -526,9 +537,10 @@ a:hover {
   top: 12px;
   width: 700px !important;
   margin-left: 240px;
-  font-family: 'DIN Next W02 Medium';
+  font-family: 'DIN Next W02 Medium', 'DIN Alternate', 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  font-weight: bold;
 }
 /* line 9, ../sass/_airtime.scss */
 #headerLiveHolder h4 {

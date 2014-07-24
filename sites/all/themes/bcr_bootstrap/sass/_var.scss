@@ -48,9 +48,10 @@ $logo_height: 200px;
 }
 
 @mixin header-font {
-  font-family: 'DIN Next W02 Medium';
+  font-family: 'DIN Next W02 Medium', 'DIN Alternate', 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  font-weight: bold;
 }
 
 
