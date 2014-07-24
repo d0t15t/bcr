@@ -1,6 +1,10 @@
 body {
   //display: none;
   margin-top: 60px;
+}
+
+body, html {
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -74,7 +78,7 @@ a:hover {
 }
 
 .node-type-channel {
-  background: no-repeat top left;
+  background: no-repeat -1px -1px;
   background-size: 100% 700px;
   &.bg-blue {
     background-image: url('../images/bg-blue.png');
