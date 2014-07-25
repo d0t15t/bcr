@@ -16,6 +16,12 @@ ul.nav li.dropdown ul.dropdown-menu {
   position: relative;
 }
 
+.main-container {
+  .col-sm-12 {
+    padding-right: 0;
+  }
+}
+
 .navbar {
   min-height: 30px;
 }

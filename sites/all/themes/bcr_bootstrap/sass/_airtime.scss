@@ -1,8 +1,16 @@
+#block-airtimewidgets-airtime-nowplaying {
+  position: relative;
+  z-index: 10;
+  .container {
+    padding-right: 0;
+  }
+}
+
 #headerLiveHolder {
   position: fixed;
   top: 12px;
   width: 700px !important;
-  margin-left: 240px;
+  margin-left: 250px;
 
   @include header-font;
 
@@ -46,9 +54,9 @@
 }
 
 #headerLiveHolder ul li span#time-elapsed:before {
-  content: "e. ";
+  content: "+";
 }
 
 #headerLiveHolder ul li span#time-remaining:before {
-  content: "r. ";
+  content: "-";
 }

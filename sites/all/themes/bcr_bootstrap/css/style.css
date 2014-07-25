@@ -16,7 +16,7 @@ body, html {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'DIN Next W02 Medium', 'DIN Alternate', 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   font-weight: bold;
   color: black;
   font-weight: normal !important;
@@ -68,7 +68,7 @@ a:hover {
 .region-navigation .navbar-collapse ul.navbar-nav {
   font-family: 'DIN Next W02 Medium', 'DIN Alternate', 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   font-weight: bold;
 }
 
@@ -115,29 +115,47 @@ a:hover {
 }
 /* line 109, ../sass/_body.scss */
 .main-container.container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-schedule-today-panel-pane-1 .view-bcr-schedule-today {
+  font-family: 'DIN Next W02 Medium', 'DIN Alternate', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  font-weight: bold;
   width: 100%;
   margin: 0px auto 0px auto;
   padding-bottom: 30px;
 }
-/* line 116, ../sass/_body.scss */
+/* line 114, ../sass/_body.scss */
+.main-container.container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-schedule-today-panel-pane-1 .view-bcr-schedule-today p {
+  font-size: 12px;
+  color: #666;
+}
+/* line 117, ../sass/_body.scss */
+.main-container.container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-schedule-today-panel-pane-1 .view-bcr-schedule-today p strong {
+  font-size: 16px;
+  color: black;
+}
+/* line 121, ../sass/_body.scss */
+.main-container.container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-schedule-today-panel-pane-1 .view-bcr-schedule-today p a {
+  color: black;
+}
+/* line 129, ../sass/_body.scss */
 .main-container.container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-blocks-bcr-chat {
   margin: 0px auto 0px auto;
   width: 100%;
 }
-/* line 120, ../sass/_body.scss */
+/* line 133, ../sass/_body.scss */
 .main-container.container .panels-flexible-4 .panels-flexible-region-4-left_1 .pane-bcr-blocks-bcr-chat .tlkio iframe {
   height: 400px !important;
 }
-/* line 129, ../sass/_body.scss */
+/* line 142, ../sass/_body.scss */
 .main-container.container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside {
   border: 1px solid #ccc;
   padding: 20px;
 }
-/* line 135, ../sass/_body.scss */
+/* line 148, ../sass/_body.scss */
 .main-container.container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside .view-bcr-blog-recent .views-row {
   margin: 0px 0px 30px 0px;
 }
-/* line 137, ../sass/_body.scss */
+/* line 150, ../sass/_body.scss */
 .main-container.container .panels-flexible-4 .panels-flexible-region-4-center .panels-flexible-region-4-center-inside .view-bcr-blog-recent .views-row .field-type-image {
   float: right;
   padding: 0px 0px 10px 20px;
@@ -148,7 +166,7 @@ a:hover {
   margin-top: 50px;
   width: 960px;
   position: relative;
-  left: -240px;
+  left: -245px;
   z-index: 9;
   background: white;
   text-align: center;
@@ -205,7 +223,7 @@ a:hover {
   letter-spacing: 1px;
   font-family: 'DIN Next W02 Medium', 'DIN Alternate', 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   font-weight: bold;
 }
 /* line 59, ../sass/_channel-display.scss */
@@ -409,7 +427,7 @@ a:hover {
 .region-navigation ul.navbar-nav {
   font-family: 'DIN Next W02 Medium', 'DIN Alternate', 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   font-weight: bold;
   z-index: 10;
 }
@@ -459,7 +477,7 @@ a:hover {
 
 /* line 4, ../sass/_page.scss */
 .main-container .row {
-  margin-left: 225px;
+  margin-left: 235px;
 }
 
 /* line 9, ../sass/_page.scss */
@@ -542,38 +560,48 @@ a:hover {
 }
 
 /* line 1, ../sass/_airtime.scss */
+#block-airtimewidgets-airtime-nowplaying {
+  position: relative;
+  z-index: 10;
+}
+/* line 4, ../sass/_airtime.scss */
+#block-airtimewidgets-airtime-nowplaying .container {
+  padding-right: 0;
+}
+
+/* line 9, ../sass/_airtime.scss */
 #headerLiveHolder {
   position: fixed;
   top: 12px;
   width: 700px !important;
-  margin-left: 240px;
+  margin-left: 250px;
   font-family: 'DIN Next W02 Medium', 'DIN Alternate', 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   font-weight: bold;
 }
-/* line 9, ../sass/_airtime.scss */
+/* line 17, ../sass/_airtime.scss */
 #headerLiveHolder h4 {
   display: none;
 }
-/* line 13, ../sass/_airtime.scss */
+/* line 21, ../sass/_airtime.scss */
 #headerLiveHolder li {
   display: inline-block;
   font-size: 12px !important;
   line-height: 18px !important;
 }
-/* line 19, ../sass/_airtime.scss */
+/* line 27, ../sass/_airtime.scss */
 #headerLiveHolder .current {
   width: 100% !important;
   margin: 0;
   padding: 0;
 }
-/* line 25, ../sass/_airtime.scss */
+/* line 33, ../sass/_airtime.scss */
 #headerLiveHolder .next {
   width: auto !important;
   display: block;
 }
-/* line 31, ../sass/_airtime.scss */
+/* line 39, ../sass/_airtime.scss */
 #headerLiveHolder .time-elapsed,
 #headerLiveHolder .time-remaining {
   position: relative;
@@ -583,24 +611,24 @@ a:hover {
   float: right;
 }
 
-/* line 40, ../sass/_airtime.scss */
+/* line 48, ../sass/_airtime.scss */
 #headerLiveHolder ul li.current {
   color: black;
 }
 
-/* line 44, ../sass/_airtime.scss */
+/* line 52, ../sass/_airtime.scss */
 #headerLiveHolder ul li span#time-elapsed {
   right: auto;
 }
 
-/* line 48, ../sass/_airtime.scss */
+/* line 56, ../sass/_airtime.scss */
 #headerLiveHolder ul li span#time-elapsed:before {
-  content: "e. ";
+  content: "+";
 }
 
-/* line 52, ../sass/_airtime.scss */
+/* line 60, ../sass/_airtime.scss */
 #headerLiveHolder ul li span#time-remaining:before {
-  content: "r. ";
+  content: "-";
 }
 
 /* import compass */
@@ -1040,12 +1068,17 @@ ul.nav li.dropdown ul.dropdown-menu {
   position: relative;
 }
 
-/* line 19, ../sass/_override.scss */
+/* line 20, ../sass/_override.scss */
+.main-container .col-sm-12 {
+  padding-right: 0;
+}
+
+/* line 25, ../sass/_override.scss */
 .navbar {
   min-height: 30px;
 }
 
-/* line 24, ../sass/_override.scss */
+/* line 30, ../sass/_override.scss */
 .node-type-channel .img-responsive {
   max-width: none;
 }
