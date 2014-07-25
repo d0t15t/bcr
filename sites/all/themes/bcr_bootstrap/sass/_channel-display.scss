@@ -1,7 +1,11 @@
 $gutter_adjust: 20px;
 .view-bcr-channels {
   margin-top: 50px;
-  width: 100%;
+  width: 960px;
+  position: relative;
+  left: -240px;
+  z-index: 9;
+  background: white;
   text-align: center;
   .views-row {
     display: inline-block;
@@ -10,9 +14,13 @@ $gutter_adjust: 20px;
   .field-name-channel-image-compound {
     .channel-img-wrapper {
       position: relative;
-      width: 250px;
-      height: 180px;
+      width: 220px;
+      height: 160px;
       margin: 0px 15px $gutter_adjust - 5 0px;
+      img {
+        width: 220px;
+        height: auto;
+      }
       .channel-img-el {
         //width: 250px;
         //height: 180px;
@@ -33,6 +41,7 @@ $gutter_adjust: 20px;
           display: block;
           position: absolute;
           top: 0px;
+          font-size: 14px;
         }
         a {
           //padding: 0px $gutter_adjust / 2 0px $gutter_adjust / 2;

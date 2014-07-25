@@ -146,22 +146,31 @@ a:hover {
 /* line 2, ../sass/_channel-display.scss */
 .view-bcr-channels {
   margin-top: 50px;
-  width: 100%;
+  width: 960px;
+  position: relative;
+  left: -240px;
+  z-index: 9;
+  background: white;
   text-align: center;
 }
-/* line 6, ../sass/_channel-display.scss */
+/* line 10, ../sass/_channel-display.scss */
 .view-bcr-channels .views-row {
   display: inline-block;
   margin-bottom: 40px;
 }
-/* line 11, ../sass/_channel-display.scss */
+/* line 15, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper {
   position: relative;
-  width: 250px;
-  height: 180px;
+  width: 220px;
+  height: 160px;
   margin: 0px 15px 15px 0px;
 }
-/* line 16, ../sass/_channel-display.scss */
+/* line 20, ../sass/_channel-display.scss */
+.view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper img {
+  width: 220px;
+  height: auto;
+}
+/* line 24, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el {
   position: absolute;
   top: 0px;
@@ -174,21 +183,22 @@ a:hover {
   -o-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 30, ../sass/_channel-display.scss */
+/* line 38, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el .channel-img-el-inner {
-  width: 250px;
-  height: 180px;
+  width: 220px;
+  height: 160px;
   display: block;
   position: absolute;
   top: 0px;
+  font-size: 14px;
 }
-/* line 37, ../sass/_channel-display.scss */
+/* line 46, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a {
-  width: 250px;
-  height: 180px;
+  width: 220px;
+  height: 160px;
   display: block;
   vertical-align: middle;
-  line-height: 180px;
+  line-height: 160px;
   text-transform: uppercase;
   font-size: 1em !important;
   font-weight: normal;
@@ -198,11 +208,11 @@ a:hover {
   letter-spacing: 0.03em;
   font-weight: bold;
 }
-/* line 50, ../sass/_channel-display.scss */
+/* line 59, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a, .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a:link, .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a:visited {
   color: white !important;
 }
-/* line 56, ../sass/_channel-display.scss */
+/* line 65, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-overlay:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -211,34 +221,34 @@ a:hover {
   -o-transition: opacity, 100ms ease-out;
   transition: opacity, 100ms ease-out;
 }
-/* line 65, ../sass/_channel-display.scss */
+/* line 74, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover {
   margin: 0px 15px 20px 0px;
 }
-/* line 67, ../sass/_channel-display.scss */
+/* line 76, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4 {
   margin: 0px !important;
   font-size: 1em !important;
   font-weight: normal;
 }
-/* line 71, ../sass/_channel-display.scss */
+/* line 80, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4 a {
   padding: 0px 10px 0px 10px;
-  width: 250px;
-  height: 180px;
+  width: 220px;
+  height: 160px;
   display: block;
   background-color: black;
   text-transform: uppercase;
   text-align: center;
-  line-height: 180px;
+  line-height: 160px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 82, ../sass/_channel-display.scss */
+/* line 91, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4 a, .view-bcr-channels .field-name-channel-cover h4 a:link, .view-bcr-channels .field-name-channel-cover h4 a:visited {
   color: white !important;
 }
-/* line 85, ../sass/_channel-display.scss */
+/* line 94, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -247,10 +257,10 @@ a:hover {
   -o-transition: opacity, 100ms ease-out;
   transition: opacity, 100ms ease-out;
 }
-/* line 91, ../sass/_channel-display.scss */
+/* line 100, ../sass/_channel-display.scss */
 .view-bcr-channels .field-type-image {
   position: relative;
-  top: -200px;
+  top: -180px;
   z-index: -1;
   height: 0px;
 }
@@ -392,8 +402,8 @@ a:hover {
 .region-navigation .menu-wrapper {
   position: fixed;
   top: 100px;
-  margin-left: 20px;
-  z-index: 10;
+  margin-left: 10px;
+  z-index: 8;
 }
 /* line 69, ../sass/_menus.scss */
 .region-navigation ul.navbar-nav {
@@ -594,6 +604,11 @@ a:hover {
 }
 
 /* import compass */
+/* line 4, ../sass/bcr-jplayer.scss */
+body {
+  margin-left: 0;
+}
+
 /*
  * Skin for jPlayer Plugin (jQuery JavaScript Library)
  * http://www.happyworm.com/jquery/jplayer
@@ -609,7 +624,7 @@ a:hover {
  * Skin Version: 3.0 (jPlayer 2.0.0)
  * Date: 20th December 2010
  */
-/* line 29, ../sass/bcr-jplayer.scss */
+/* line 30, ../sass/bcr-jplayer.scss */
 .bcr-logo {
   display: inline-block;
   width: 39px;
@@ -619,18 +634,18 @@ a:hover {
   vertical-align: middle;
 }
 
-/* line 38, ../sass/bcr-jplayer.scss */
+/* line 39, ../sass/bcr-jplayer.scss */
 .home-link {
   height: 20px;
   width: 20px;
 }
 
-/* line 50, ../sass/bcr-jplayer.scss */
+/* line 51, ../sass/bcr-jplayer.scss */
 .jp-audio {
   display: inline-block;
   top: 0px;
 }
-/* line 55, ../sass/bcr-jplayer.scss */
+/* line 56, ../sass/bcr-jplayer.scss */
 .jp-audio .jp-controls {
   vertical-align: middle;
   display: inline-block;
@@ -638,49 +653,49 @@ a:hover {
   padding: 0;
   position: relative;
 }
-/* line 61, ../sass/bcr-jplayer.scss */
+/* line 62, ../sass/bcr-jplayer.scss */
 .jp-audio .jp-controls li {
   display: inline-block;
   list-style: none;
   position: absolute;
   top: -9px;
 }
-/* line 67, ../sass/bcr-jplayer.scss */
+/* line 68, ../sass/bcr-jplayer.scss */
 .jp-audio .jp-controls li.play-control {
   left: 20px;
 }
-/* line 71, ../sass/bcr-jplayer.scss */
+/* line 72, ../sass/bcr-jplayer.scss */
 .jp-audio .jp-controls li.vol-control {
   left: 70px;
 }
-/* line 75, ../sass/bcr-jplayer.scss */
+/* line 76, ../sass/bcr-jplayer.scss */
 .jp-audio .jp-controls li a {
   vertical-align: middle;
   position: absolute;
   outline: none;
 }
-/* line 82, ../sass/bcr-jplayer.scss */
+/* line 83, ../sass/bcr-jplayer.scss */
 .jp-audio .jp-controls li .jp-play {
   width: 20px;
   height: 20px;
   background: url("../images/jplayer-buttons/player-button--play.png") no-repeat center;
   background-size: 16px;
 }
-/* line 88, ../sass/bcr-jplayer.scss */
+/* line 89, ../sass/bcr-jplayer.scss */
 .jp-audio .jp-controls li .jp-pause {
   width: 20px;
   height: 20px;
   background: url("../images/jplayer-buttons/player-button--pause.png") no-repeat center;
   background-size: 17px;
 }
-/* line 94, ../sass/bcr-jplayer.scss */
+/* line 95, ../sass/bcr-jplayer.scss */
 .jp-audio .jp-controls li .jp-mute {
   width: 22px;
   height: 20px;
   background: url("../images/jplayer-buttons/vol-button--off.png") no-repeat center;
   background-size: 22px;
 }
-/* line 100, ../sass/bcr-jplayer.scss */
+/* line 101, ../sass/bcr-jplayer.scss */
 .jp-audio .jp-controls li .jp-unmute {
   width: 23px;
   height: 20px;
@@ -688,7 +703,7 @@ a:hover {
   background-size: 23px;
 }
 
-/* line 115, ../sass/bcr-jplayer.scss */
+/* line 116, ../sass/bcr-jplayer.scss */
 div.jp-audio,
 div.jp-video {
   /* Edit the font-size to counteract inherited font sizing.
@@ -701,20 +716,20 @@ div.jp-video {
   color: #666;
 }
 
-/* line 129, ../sass/bcr-jplayer.scss */
+/* line 130, ../sass/bcr-jplayer.scss */
 div.label {
   font-size: 1em;
   font-weight: bold;
   text-indent: 5px;
 }
 
-/* line 136, ../sass/bcr-jplayer.scss */
+/* line 137, ../sass/bcr-jplayer.scss */
 div.jp-interface ul.jp-controls a {
   overflow: hidden;
   text-indent: -9999px;
 }
 
-/* line 141, ../sass/bcr-jplayer.scss */
+/* line 142, ../sass/bcr-jplayer.scss */
 a.jp-stop {
   background: url("jplayer.blue.monday.jpg") 0 -83px no-repeat;
   width: 28px;
@@ -722,85 +737,85 @@ a.jp-stop {
   z-index: 1;
 }
 
-/* line 147, ../sass/bcr-jplayer.scss */
+/* line 148, ../sass/bcr-jplayer.scss */
 a.jp-stop:hover {
   background: url("jplayer.blue.monday.jpg") -29px -83px no-repeat;
 }
 
-/* line 150, ../sass/bcr-jplayer.scss */
+/* line 151, ../sass/bcr-jplayer.scss */
 div.jp-audio div.jp-type-playlist a.jp-previous {
   left: 20px;
   top: 26px;
 }
 
-/* line 154, ../sass/bcr-jplayer.scss */
+/* line 155, ../sass/bcr-jplayer.scss */
 div.jp-video div.jp-type-playlist a.jp-previous {
   top: 21px;
 }
 
-/* line 157, ../sass/bcr-jplayer.scss */
+/* line 158, ../sass/bcr-jplayer.scss */
 div.jp-video-270p div.jp-type-playlist a.jp-previous {
   left: 192px;
 }
 
-/* line 160, ../sass/bcr-jplayer.scss */
+/* line 161, ../sass/bcr-jplayer.scss */
 div.jp-video-360p div.jp-type-playlist a.jp-previous {
   left: 272px;
 }
 
-/* line 163, ../sass/bcr-jplayer.scss */
+/* line 164, ../sass/bcr-jplayer.scss */
 a.jp-previous {
   background: url("jplayer.blue.monday.jpg") 0 -112px no-repeat;
   width: 28px;
   height: 28px;
 }
 
-/* line 168, ../sass/bcr-jplayer.scss */
+/* line 169, ../sass/bcr-jplayer.scss */
 a.jp-previous:hover {
   background: url("jplayer.blue.monday.jpg") -29px -112px no-repeat;
 }
 
-/* line 171, ../sass/bcr-jplayer.scss */
+/* line 172, ../sass/bcr-jplayer.scss */
 div.jp-audio div.jp-type-playlist a.jp-next {
   left: 88px;
   top: 26px;
 }
 
-/* line 175, ../sass/bcr-jplayer.scss */
+/* line 176, ../sass/bcr-jplayer.scss */
 div.jp-video div.jp-type-playlist a.jp-next {
   top: 21px;
 }
 
-/* line 178, ../sass/bcr-jplayer.scss */
+/* line 179, ../sass/bcr-jplayer.scss */
 div.jp-video-270p div.jp-type-playlist a.jp-next {
   left: 260px;
 }
 
-/* line 181, ../sass/bcr-jplayer.scss */
+/* line 182, ../sass/bcr-jplayer.scss */
 div.jp-video-360p div.jp-type-playlist a.jp-next {
   left: 340px;
 }
 
-/* line 184, ../sass/bcr-jplayer.scss */
+/* line 185, ../sass/bcr-jplayer.scss */
 a.jp-next {
   background: url("jplayer.blue.monday.jpg") 0 -141px no-repeat;
   width: 28px;
   height: 28px;
 }
 
-/* line 189, ../sass/bcr-jplayer.scss */
+/* line 190, ../sass/bcr-jplayer.scss */
 a.jp-next:hover {
   background: url("jplayer.blue.monday.jpg") -29px -141px no-repeat;
 }
 
-/* line 192, ../sass/bcr-jplayer.scss */
+/* line 193, ../sass/bcr-jplayer.scss */
 div.jp-progress {
   position: absolute;
   overflow: hidden;
   background-color: #ddd;
 }
 
-/* line 197, ../sass/bcr-jplayer.scss */
+/* line 198, ../sass/bcr-jplayer.scss */
 div.jp-audio div.jp-type-single div.jp-progress {
   top: 32px;
   left: 130px;
@@ -808,7 +823,7 @@ div.jp-audio div.jp-type-single div.jp-progress {
   height: 15px;
 }
 
-/* line 203, ../sass/bcr-jplayer.scss */
+/* line 204, ../sass/bcr-jplayer.scss */
 div.jp-audio div.jp-type-playlist div.jp-progress {
   top: 32px;
   left: 164px;
@@ -816,7 +831,7 @@ div.jp-audio div.jp-type-playlist div.jp-progress {
   height: 15px;
 }
 
-/* line 209, ../sass/bcr-jplayer.scss */
+/* line 210, ../sass/bcr-jplayer.scss */
 div.jp-video div.jp-progress {
   top: 0px;
   left: 0px;
@@ -824,7 +839,7 @@ div.jp-video div.jp-progress {
   height: 10px;
 }
 
-/* line 215, ../sass/bcr-jplayer.scss */
+/* line 216, ../sass/bcr-jplayer.scss */
 div.jp-seek-bar {
   background: url("jplayer.blue.monday.jpg") 0 -202px repeat-x;
   width: 0px;
@@ -833,7 +848,7 @@ div.jp-seek-bar {
   cursor: pointer;
 }
 
-/* line 222, ../sass/bcr-jplayer.scss */
+/* line 223, ../sass/bcr-jplayer.scss */
 div.jp-play-bar {
   background: url("jplayer.blue.monday.jpg") 0 -218px repeat-x;
   width: 0px;
@@ -842,12 +857,12 @@ div.jp-play-bar {
 }
 
 /* The seeking class is added/removed inside jPlayer */
-/* line 230, ../sass/bcr-jplayer.scss */
+/* line 231, ../sass/bcr-jplayer.scss */
 div.jp-seeking-bg {
   background: url("pbar-ani.gif");
 }
 
-/* line 235, ../sass/bcr-jplayer.scss */
+/* line 236, ../sass/bcr-jplayer.scss */
 div.jp-volume-bar {
   position: absolute;
   overflow: hidden;
@@ -857,51 +872,51 @@ div.jp-volume-bar {
   cursor: pointer;
 }
 
-/* line 243, ../sass/bcr-jplayer.scss */
+/* line 244, ../sass/bcr-jplayer.scss */
 div.jp-audio div.jp-type-single div.jp-volume-bar {
   top: 37px;
   left: 302px;
 }
 
-/* line 247, ../sass/bcr-jplayer.scss */
+/* line 248, ../sass/bcr-jplayer.scss */
 div.jp-audio div.jp-type-playlist div.jp-volume-bar {
   top: 37px;
   left: 324px;
 }
 
-/* line 253, ../sass/bcr-jplayer.scss */
+/* line 254, ../sass/bcr-jplayer.scss */
 div.jp-video div.jp-volume-bar {
   top: 32px;
 }
 
-/* line 256, ../sass/bcr-jplayer.scss */
+/* line 257, ../sass/bcr-jplayer.scss */
 div.jp-video-270p div.jp-type-single div.jp-volume-bar {
   left: 332px;
 }
 
-/* line 259, ../sass/bcr-jplayer.scss */
+/* line 260, ../sass/bcr-jplayer.scss */
 div.jp-video-270p div.jp-type-playlist div.jp-volume-bar {
   left: 391px;
 }
 
-/* line 262, ../sass/bcr-jplayer.scss */
+/* line 263, ../sass/bcr-jplayer.scss */
 div.jp-video-360p div.jp-type-single div.jp-volume-bar {
   left: 412px;
 }
 
-/* line 265, ../sass/bcr-jplayer.scss */
+/* line 266, ../sass/bcr-jplayer.scss */
 div.jp-video-360p div.jp-type-playlist div.jp-volume-bar {
   left: 471px;
 }
 
-/* line 268, ../sass/bcr-jplayer.scss */
+/* line 269, ../sass/bcr-jplayer.scss */
 div.jp-volume-bar-value {
   background: url("jplayer.blue.monday.jpg") 0 -256px repeat-x;
   width: 0px;
   height: 5px;
 }
 
-/* line 274, ../sass/bcr-jplayer.scss */
+/* line 275, ../sass/bcr-jplayer.scss */
 div.jp-current-time,
 div.jp-duration {
   position: absolute;
@@ -909,12 +924,12 @@ div.jp-duration {
   font-style: oblique;
 }
 
-/* line 279, ../sass/bcr-jplayer.scss */
+/* line 280, ../sass/bcr-jplayer.scss */
 div.jp-duration {
   text-align: right;
 }
 
-/* line 283, ../sass/bcr-jplayer.scss */
+/* line 284, ../sass/bcr-jplayer.scss */
 div.jp-audio div.jp-type-single div.jp-current-time,
 div.jp-audio div.jp-type-single div.jp-duration {
   top: 49px;
@@ -922,7 +937,7 @@ div.jp-audio div.jp-type-single div.jp-duration {
   width: 122px;
 }
 
-/* line 289, ../sass/bcr-jplayer.scss */
+/* line 290, ../sass/bcr-jplayer.scss */
 div.jp-audio div.jp-type-playlist div.jp-current-time,
 div.jp-audio div.jp-type-playlist div.jp-duration {
   top: 49px;
@@ -930,7 +945,7 @@ div.jp-audio div.jp-type-playlist div.jp-duration {
   width: 122px;
 }
 
-/* line 297, ../sass/bcr-jplayer.scss */
+/* line 298, ../sass/bcr-jplayer.scss */
 div.jp-playlist {
   /* width:418px; */
   width: 100%;
@@ -939,7 +954,7 @@ div.jp-playlist {
   border-top: none;
 }
 
-/* line 305, ../sass/bcr-jplayer.scss */
+/* line 306, ../sass/bcr-jplayer.scss */
 div.jp-playlist ul {
   list-style-type: none;
   margin: 0;
@@ -951,13 +966,13 @@ div.jp-playlist ul {
   font-size: .72em;
 }
 
-/* line 317, ../sass/bcr-jplayer.scss */
+/* line 318, ../sass/bcr-jplayer.scss */
 div.jp-type-single div.jp-playlist li {
   padding: 5px 0 5px 20px;
   font-weight: bold;
 }
 
-/* line 321, ../sass/bcr-jplayer.scss */
+/* line 322, ../sass/bcr-jplayer.scss */
 div.jp-type-playlist div.jp-playlist li {
   padding: 5px 0 4px 20px;
   border-bottom: 1px solid #eee;
@@ -969,36 +984,36 @@ div.jp-video div.jp-playlist li {
   font-weight:bold;
 }
 */
-/* line 331, ../sass/bcr-jplayer.scss */
+/* line 332, ../sass/bcr-jplayer.scss */
 div.jp-type-playlist div.jp-playlist li.jp-playlist-last {
   padding: 5px 0 5px 20px;
   border-bottom: none;
 }
 
-/* line 335, ../sass/bcr-jplayer.scss */
+/* line 336, ../sass/bcr-jplayer.scss */
 div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
   list-style-type: square;
   list-style-position: inside;
   padding-left: 8px;
 }
 
-/* line 340, ../sass/bcr-jplayer.scss */
+/* line 341, ../sass/bcr-jplayer.scss */
 div.jp-type-playlist div.jp-playlist a {
   color: #666;
   text-decoration: none;
 }
 
-/* line 344, ../sass/bcr-jplayer.scss */
+/* line 345, ../sass/bcr-jplayer.scss */
 div.jp-type-playlist div.jp-playlist a:hover {
   color: #0d88c1;
 }
 
-/* line 347, ../sass/bcr-jplayer.scss */
+/* line 348, ../sass/bcr-jplayer.scss */
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
   color: #0d88c1;
 }
 
-/* line 350, ../sass/bcr-jplayer.scss */
+/* line 351, ../sass/bcr-jplayer.scss */
 div.jp-type-playlist div.jp-playlist div.jp-free-media {
   display: inline;
   margin-left: 20px;
