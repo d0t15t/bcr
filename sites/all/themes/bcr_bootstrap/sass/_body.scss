@@ -104,6 +104,7 @@ a:hover {
   .panels-flexible-4 {
     // upper left
     .panels-flexible-region-4-left_1 {
+      padding-right: 60px;
       // schedule pane
       .pane-bcr-schedule-today-panel-pane-1 {
         .view-bcr-schedule-today {
@@ -140,16 +141,15 @@ a:hover {
     // upper right
     .panels-flexible-region-4-center {
       .panels-flexible-region-4-center-inside {
-        border: 1px solid #ccc;
-        padding: 20px;
+        padding: 0 0 0 20px;
 
         // recent blog
         .view-bcr-blog-recent {
           .views-row {
             margin: 0px 0px 30px 0px ;
             .field-type-image {
-              float: right;
-              padding: 0px 0px 10px 20px;
+              width: 100%;
+              height: auto;
             }
           }
         }
