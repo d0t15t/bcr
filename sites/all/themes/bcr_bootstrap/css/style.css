@@ -164,6 +164,11 @@ a:hover {
   height: auto;
 }
 
+/* line 166, ../sass/_body.scss */
+.region-footer .view-bcr-channels {
+  position: inherit !important;
+}
+
 /* line 4, ../sass/_channel-display.scss */
 .homepage-body .view-bcr-channels {
   left: -240px;
@@ -176,25 +181,26 @@ a:hover {
   z-index: 9;
   background: white;
   text-align: center;
+  margin-top: 80px;
 }
-/* line 14, ../sass/_channel-display.scss */
+/* line 15, ../sass/_channel-display.scss */
 .view-bcr-channels .views-row {
   display: inline-block;
   margin-bottom: 40px;
 }
-/* line 19, ../sass/_channel-display.scss */
+/* line 20, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper {
   position: relative;
   width: 220px;
   height: 160px;
   margin: 0px 15px 15px 0px;
 }
-/* line 24, ../sass/_channel-display.scss */
+/* line 25, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper img {
   width: 220px;
   height: auto;
 }
-/* line 28, ../sass/_channel-display.scss */
+/* line 29, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el {
   position: absolute;
   top: 0px;
@@ -207,7 +213,7 @@ a:hover {
   -o-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 42, ../sass/_channel-display.scss */
+/* line 43, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el .channel-img-el-inner {
   width: 220px;
   height: 160px;
@@ -216,7 +222,7 @@ a:hover {
   top: 0px;
   font-size: 14px;
 }
-/* line 50, ../sass/_channel-display.scss */
+/* line 51, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a {
   width: 220px;
   height: 160px;
@@ -232,11 +238,11 @@ a:hover {
   letter-spacing: 0.01em;
   font-weight: bold;
 }
-/* line 63, ../sass/_channel-display.scss */
+/* line 64, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a, .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a:link, .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a:visited {
   color: white !important;
 }
-/* line 69, ../sass/_channel-display.scss */
+/* line 70, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-overlay:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -245,17 +251,17 @@ a:hover {
   -o-transition: opacity, 100ms ease-out;
   transition: opacity, 100ms ease-out;
 }
-/* line 78, ../sass/_channel-display.scss */
+/* line 79, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover {
   margin: 0px 15px 20px 0px;
 }
-/* line 80, ../sass/_channel-display.scss */
+/* line 81, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4 {
   margin: 0px !important;
   font-size: 1em !important;
   font-weight: normal;
 }
-/* line 84, ../sass/_channel-display.scss */
+/* line 85, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4 a {
   padding: 0px 10px 0px 10px;
   width: 220px;
@@ -268,11 +274,11 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 95, ../sass/_channel-display.scss */
+/* line 96, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4 a, .view-bcr-channels .field-name-channel-cover h4 a:link, .view-bcr-channels .field-name-channel-cover h4 a:visited {
   color: white !important;
 }
-/* line 98, ../sass/_channel-display.scss */
+/* line 99, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -281,7 +287,7 @@ a:hover {
   -o-transition: opacity, 100ms ease-out;
   transition: opacity, 100ms ease-out;
 }
-/* line 104, ../sass/_channel-display.scss */
+/* line 105, ../sass/_channel-display.scss */
 .view-bcr-channels .field-type-image {
   position: relative;
   top: -180px;
@@ -1103,6 +1109,5 @@ ul.nav li.dropdown ul.dropdown-menu {
 /* line 34, ../sass/_override.scss */
 .region-footer {
   border: 0;
-  background: white;
-  z-index: 9;
+  background: none;
 }
