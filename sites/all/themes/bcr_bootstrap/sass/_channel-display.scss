@@ -2,7 +2,7 @@ $gutter_adjust: 20px;
 
 
 .homepage-body .view-bcr-channels {
-  left: -240px;
+  left: -250px;
 }
 
 .view-bcr-channels {
@@ -11,7 +11,7 @@ $gutter_adjust: 20px;
   z-index: 9;
   background: white;
   text-align: center;
-  margin-top: 80px;
+  margin: 80px 5px 0;
   .views-row {
     display: inline-block;
     margin-bottom: $gutter_adjust * 2;

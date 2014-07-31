@@ -166,7 +166,7 @@ a:hover {
 
 /* line 4, ../sass/_channel-display.scss */
 .homepage-body .view-bcr-channels {
-  left: -240px;
+  left: -250px;
 }
 
 /* line 8, ../sass/_channel-display.scss */
@@ -176,7 +176,7 @@ a:hover {
   z-index: 9;
   background: white;
   text-align: center;
-  margin-top: 80px;
+  margin: 80px 5px 0;
 }
 /* line 15, ../sass/_channel-display.scss */
 .view-bcr-channels .views-row {
