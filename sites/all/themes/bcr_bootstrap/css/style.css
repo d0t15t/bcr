@@ -166,32 +166,30 @@ a:hover {
 
 /* line 2, ../sass/_channel-display.scss */
 .view-bcr-channels {
-  margin-top: 50px;
   width: 960px;
   position: relative;
-  left: -245px;
   z-index: 9;
   background: white;
   text-align: center;
 }
-/* line 10, ../sass/_channel-display.scss */
+/* line 8, ../sass/_channel-display.scss */
 .view-bcr-channels .views-row {
   display: inline-block;
   margin-bottom: 40px;
 }
-/* line 15, ../sass/_channel-display.scss */
+/* line 13, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper {
   position: relative;
   width: 220px;
   height: 160px;
   margin: 0px 15px 15px 0px;
 }
-/* line 20, ../sass/_channel-display.scss */
+/* line 18, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper img {
   width: 220px;
   height: auto;
 }
-/* line 24, ../sass/_channel-display.scss */
+/* line 22, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el {
   position: absolute;
   top: 0px;
@@ -204,7 +202,7 @@ a:hover {
   -o-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 38, ../sass/_channel-display.scss */
+/* line 36, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el .channel-img-el-inner {
   width: 220px;
   height: 160px;
@@ -213,7 +211,7 @@ a:hover {
   top: 0px;
   font-size: 14px;
 }
-/* line 46, ../sass/_channel-display.scss */
+/* line 44, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a {
   width: 220px;
   height: 160px;
@@ -229,11 +227,11 @@ a:hover {
   letter-spacing: 0.01em;
   font-weight: bold;
 }
-/* line 59, ../sass/_channel-display.scss */
+/* line 57, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a, .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a:link, .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a:visited {
   color: white !important;
 }
-/* line 65, ../sass/_channel-display.scss */
+/* line 63, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-overlay:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -242,17 +240,17 @@ a:hover {
   -o-transition: opacity, 100ms ease-out;
   transition: opacity, 100ms ease-out;
 }
-/* line 74, ../sass/_channel-display.scss */
+/* line 72, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover {
   margin: 0px 15px 20px 0px;
 }
-/* line 76, ../sass/_channel-display.scss */
+/* line 74, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4 {
   margin: 0px !important;
   font-size: 1em !important;
   font-weight: normal;
 }
-/* line 80, ../sass/_channel-display.scss */
+/* line 78, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4 a {
   padding: 0px 10px 0px 10px;
   width: 220px;
@@ -265,11 +263,11 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 91, ../sass/_channel-display.scss */
+/* line 89, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4 a, .view-bcr-channels .field-name-channel-cover h4 a:link, .view-bcr-channels .field-name-channel-cover h4 a:visited {
   color: white !important;
 }
-/* line 94, ../sass/_channel-display.scss */
+/* line 92, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -278,7 +276,7 @@ a:hover {
   -o-transition: opacity, 100ms ease-out;
   transition: opacity, 100ms ease-out;
 }
-/* line 100, ../sass/_channel-display.scss */
+/* line 98, ../sass/_channel-display.scss */
 .view-bcr-channels .field-type-image {
   position: relative;
   top: -180px;
@@ -1095,4 +1093,11 @@ ul.nav li.dropdown ul.dropdown-menu {
 /* line 30, ../sass/_override.scss */
 .node-type-channel .img-responsive {
   max-width: none;
+}
+
+/* line 34, ../sass/_override.scss */
+.region-footer {
+  border: 0;
+  background: white;
+  z-index: 9;
 }
