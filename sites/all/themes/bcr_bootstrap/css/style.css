@@ -161,6 +161,11 @@ a:hover {
   padding: 0px 0px 10px 20px;
 }
 
+/* line 166, ../sass/_body.scss */
+.region-footer .view-bcr-channels {
+  position: inherit !important;
+}
+
 /* line 2, ../sass/_channel-display.scss */
 .view-bcr-channels {
   margin-top: 50px;

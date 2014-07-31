@@ -469,3 +469,13 @@
 2014-06-04 14:29:16 overwrite css/style.css 
 2014-06-04 14:29:22 overwrite css/style.css 
 2014-06-04 14:29:26 overwrite css/style.css 
+2014-07-31 13:21:28 identical css/bcr-jplayer.css 
+2014-07-31 13:21:30 identical css/style.css 
+2014-07-31 13:23:13 identical css/style.css 
+2014-07-31 13:23:23     error sass/style.scss (Line 165 of sass/_body.scss: Invalid CSS after ".": expected class name, was "")
+2014-07-31 13:23:23 overwrite css/style.css 
+2014-07-31 13:23:33 overwrite css/style.css 
+2014-07-31 13:23:39 identical css/style.css 
+2014-07-31 13:23:50 overwrite css/style.css 
+2014-07-31 13:27:35 overwrite css/style.css 
+2014-07-31 13:27:39 overwrite css/style.css 
