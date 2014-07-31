@@ -48,6 +48,10 @@ body {
       background-position: bottom left;
     }
     margin-bottom: 20px;
+
+    .homepage-body & {
+      display: none;
+    }
   }
 }
 
