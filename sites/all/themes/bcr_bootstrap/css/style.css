@@ -164,7 +164,12 @@ a:hover {
   height: auto;
 }
 
-/* line 2, ../sass/_channel-display.scss */
+/* line 4, ../sass/_channel-display.scss */
+.homepage-body .view-bcr-channels {
+  left: -240px;
+}
+
+/* line 8, ../sass/_channel-display.scss */
 .view-bcr-channels {
   width: 960px;
   position: relative;
@@ -172,24 +177,24 @@ a:hover {
   background: white;
   text-align: center;
 }
-/* line 8, ../sass/_channel-display.scss */
+/* line 14, ../sass/_channel-display.scss */
 .view-bcr-channels .views-row {
   display: inline-block;
   margin-bottom: 40px;
 }
-/* line 13, ../sass/_channel-display.scss */
+/* line 19, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper {
   position: relative;
   width: 220px;
   height: 160px;
   margin: 0px 15px 15px 0px;
 }
-/* line 18, ../sass/_channel-display.scss */
+/* line 24, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper img {
   width: 220px;
   height: auto;
 }
-/* line 22, ../sass/_channel-display.scss */
+/* line 28, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el {
   position: absolute;
   top: 0px;
@@ -202,7 +207,7 @@ a:hover {
   -o-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 36, ../sass/_channel-display.scss */
+/* line 42, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el .channel-img-el-inner {
   width: 220px;
   height: 160px;
@@ -211,7 +216,7 @@ a:hover {
   top: 0px;
   font-size: 14px;
 }
-/* line 44, ../sass/_channel-display.scss */
+/* line 50, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a {
   width: 220px;
   height: 160px;
@@ -227,11 +232,11 @@ a:hover {
   letter-spacing: 0.01em;
   font-weight: bold;
 }
-/* line 57, ../sass/_channel-display.scss */
+/* line 63, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a, .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a:link, .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a:visited {
   color: white !important;
 }
-/* line 63, ../sass/_channel-display.scss */
+/* line 69, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-overlay:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -240,17 +245,17 @@ a:hover {
   -o-transition: opacity, 100ms ease-out;
   transition: opacity, 100ms ease-out;
 }
-/* line 72, ../sass/_channel-display.scss */
+/* line 78, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover {
   margin: 0px 15px 20px 0px;
 }
-/* line 74, ../sass/_channel-display.scss */
+/* line 80, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4 {
   margin: 0px !important;
   font-size: 1em !important;
   font-weight: normal;
 }
-/* line 78, ../sass/_channel-display.scss */
+/* line 84, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4 a {
   padding: 0px 10px 0px 10px;
   width: 220px;
@@ -263,11 +268,11 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 89, ../sass/_channel-display.scss */
+/* line 95, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4 a, .view-bcr-channels .field-name-channel-cover h4 a:link, .view-bcr-channels .field-name-channel-cover h4 a:visited {
   color: white !important;
 }
-/* line 92, ../sass/_channel-display.scss */
+/* line 98, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -276,7 +281,7 @@ a:hover {
   -o-transition: opacity, 100ms ease-out;
   transition: opacity, 100ms ease-out;
 }
-/* line 98, ../sass/_channel-display.scss */
+/* line 104, ../sass/_channel-display.scss */
 .view-bcr-channels .field-type-image {
   position: relative;
   top: -180px;
