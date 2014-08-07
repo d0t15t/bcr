@@ -22,9 +22,28 @@
 
 .blog-post-region {
   .field-type-image {
-    margin-bottom: 40px;
+    padding-bottom: 20px;
     .field-item {
       margin-bottom: 20px;
+      width: 220px;
+      display: inline-block;
+      margin-right: 20px;
+      &:first-child {
+        width: auto;
+        margin-right: 0;
+        display: block;
+      }
+      &:nth-child(4),
+      &:nth-child(7),
+      &:nth-child(10),
+      &:nth-child(13),
+      &:nth-child(16),
+      &:nth-child(19) {
+        margin-right: 0;
+      }
     }
+  }
+  .field-name-body {
+    clear: both;
   }
 }
