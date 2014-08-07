@@ -290,6 +290,27 @@ a:hover {
   height: 0px;
 }
 
+/* line 2, ../sass/_blog.scss */
+.view-bcr-blog-recent .views-row {
+  width: 220px;
+  float: left;
+  padding-bottom: 30px;
+  margin: 0 20px 0 0;
+}
+/* line 8, ../sass/_blog.scss */
+.view-bcr-blog-recent .views-row h4 {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+/* line 13, ../sass/_blog.scss */
+.view-bcr-blog-recent .views-row:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 17, ../sass/_blog.scss */
+.view-bcr-blog-recent .views-row:nth-child(3n+1) {
+  clear: both;
+}
+
 /* line 11, ../sass/_menus.scss */
 .menu-wrapper .menu .leaf {
   background-repeat: no-repeat !important;
@@ -492,13 +513,17 @@ a:hover {
   background: url(../images/logotypebig.png) no-repeat 0px 20px;
   background-size: 700px;
 }
+/* line 9, ../sass/_page.scss */
+#homepage-panel .panels-flexible-region-last h2 {
+  margin-top: 0;
+}
 
-/* line 10, ../sass/_page.scss */
+/* line 16, ../sass/_page.scss */
 .main-container .row {
   margin-left: 235px;
 }
 
-/* line 15, ../sass/_page.scss */
+/* line 21, ../sass/_page.scss */
 .page-header {
   font-size: 92px;
   text-align: right;
@@ -506,17 +531,17 @@ a:hover {
   border: 0;
 }
 
-/* line 22, ../sass/_page.scss */
+/* line 28, ../sass/_page.scss */
 .field-item {
   font-size: 16px;
   line-height: 1.6em;
 }
 
-/* line 27, ../sass/_page.scss */
+/* line 33, ../sass/_page.scss */
 .panel-flexible .panel-separator {
   margin-bottom: 2em;
 }
-/* line 29, ../sass/_page.scss */
+/* line 35, ../sass/_page.scss */
 .panel-flexible .panel-separator a {
   text-decoration: underline !important;
 }
@@ -588,6 +613,12 @@ a:hover {
 }
 
 /* line 9, ../sass/_airtime.scss */
+#headerLiveHolder ul li, #headerLiveTrackHolder ul li {
+  overflow: visible;
+  height: 18px;
+}
+
+/* line 14, ../sass/_airtime.scss */
 #headerLiveHolder {
   position: fixed;
   top: 12px;
@@ -598,28 +629,28 @@ a:hover {
   letter-spacing: 0.01em;
   font-weight: bold;
 }
-/* line 17, ../sass/_airtime.scss */
+/* line 22, ../sass/_airtime.scss */
 #headerLiveHolder h4 {
   display: none;
 }
-/* line 21, ../sass/_airtime.scss */
+/* line 26, ../sass/_airtime.scss */
 #headerLiveHolder li {
   display: inline-block;
   font-size: 12px !important;
   line-height: 18px !important;
 }
-/* line 27, ../sass/_airtime.scss */
+/* line 32, ../sass/_airtime.scss */
 #headerLiveHolder .current {
   width: 100% !important;
   margin: 0;
   padding: 0;
 }
-/* line 33, ../sass/_airtime.scss */
+/* line 38, ../sass/_airtime.scss */
 #headerLiveHolder .next {
   width: auto !important;
   display: block;
 }
-/* line 39, ../sass/_airtime.scss */
+/* line 44, ../sass/_airtime.scss */
 #headerLiveHolder .time-elapsed,
 #headerLiveHolder .time-remaining {
   position: relative;
@@ -629,22 +660,22 @@ a:hover {
   float: right;
 }
 
-/* line 48, ../sass/_airtime.scss */
+/* line 53, ../sass/_airtime.scss */
 #headerLiveHolder ul li.current {
   color: black;
 }
 
-/* line 52, ../sass/_airtime.scss */
+/* line 57, ../sass/_airtime.scss */
 #headerLiveHolder ul li span#time-elapsed {
   right: auto;
 }
 
-/* line 56, ../sass/_airtime.scss */
+/* line 61, ../sass/_airtime.scss */
 #headerLiveHolder ul li span#time-elapsed:before {
   content: "+";
 }
 
-/* line 60, ../sass/_airtime.scss */
+/* line 65, ../sass/_airtime.scss */
 #headerLiveHolder ul li span#time-remaining:before {
   content: "-";
 }
