@@ -174,28 +174,40 @@ a:hover {
   width: 960px;
   position: relative;
   z-index: 9;
-  background: white;
   text-align: center;
-  margin: 80px 5px 0;
-}
-/* line 15, ../sass/_channel-display.scss */
-.view-bcr-channels .views-row {
-  display: inline-block;
-  margin-bottom: 40px;
+  margin: 80px 10px 0;
+  padding-bottom: 160px;
+  background: white url(../images/logospot_footer.png) no-repeat bottom 60px center;
+  background-size: 90px;
 }
 /* line 20, ../sass/_channel-display.scss */
+.view-bcr-channels .views-row {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+/* line 25, ../sass/_channel-display.scss */
+.view-bcr-channels .views-row:nth-child(4n) {
+  margin-right: 0;
+}
+/* line 28, ../sass/_channel-display.scss */
+.view-bcr-channels .views-row:nth-child(4n + 1) {
+  clear: both;
+}
+/* line 33, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper {
   position: relative;
   width: 220px;
   height: 160px;
-  margin: 0px 15px 15px 0px;
+  margin: 0;
 }
-/* line 25, ../sass/_channel-display.scss */
+/* line 38, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper img {
   width: 220px;
   height: auto;
 }
-/* line 29, ../sass/_channel-display.scss */
+/* line 42, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el {
   position: absolute;
   top: 0px;
@@ -208,7 +220,7 @@ a:hover {
   -o-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 43, ../sass/_channel-display.scss */
+/* line 56, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el .channel-img-el-inner {
   width: 220px;
   height: 160px;
@@ -217,7 +229,7 @@ a:hover {
   top: 0px;
   font-size: 14px;
 }
-/* line 51, ../sass/_channel-display.scss */
+/* line 64, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a {
   width: 220px;
   height: 160px;
@@ -233,11 +245,11 @@ a:hover {
   letter-spacing: 0.01em;
   font-weight: bold;
 }
-/* line 64, ../sass/_channel-display.scss */
+/* line 77, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a, .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a:link, .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-el a:visited {
   color: white !important;
 }
-/* line 70, ../sass/_channel-display.scss */
+/* line 83, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-image-compound .channel-img-wrapper .channel-img-overlay:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -246,17 +258,17 @@ a:hover {
   -o-transition: opacity, 100ms ease-out;
   transition: opacity, 100ms ease-out;
 }
-/* line 79, ../sass/_channel-display.scss */
+/* line 92, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover {
   margin: 0px 15px 20px 0px;
 }
-/* line 81, ../sass/_channel-display.scss */
+/* line 94, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4 {
   margin: 0px !important;
   font-size: 1em !important;
   font-weight: normal;
 }
-/* line 85, ../sass/_channel-display.scss */
+/* line 98, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4 a {
   padding: 0px 10px 0px 10px;
   width: 220px;
@@ -269,11 +281,11 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 96, ../sass/_channel-display.scss */
+/* line 109, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4 a, .view-bcr-channels .field-name-channel-cover h4 a:link, .view-bcr-channels .field-name-channel-cover h4 a:visited {
   color: white !important;
 }
-/* line 99, ../sass/_channel-display.scss */
+/* line 112, ../sass/_channel-display.scss */
 .view-bcr-channels .field-name-channel-cover h4:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -282,14 +294,35 @@ a:hover {
   -o-transition: opacity, 100ms ease-out;
   transition: opacity, 100ms ease-out;
 }
-/* line 105, ../sass/_channel-display.scss */
+/* line 118, ../sass/_channel-display.scss */
 .view-bcr-channels .field-type-image {
   position: relative;
   top: -180px;
   z-index: -1;
   height: 0px;
 }
+/* line 125, ../sass/_channel-display.scss */
+.view-bcr-channels:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
 
+/* line 135, ../sass/_channel-display.scss */
+* html .view-bcr-channels {
+  zoom: 1;
+}
+
+/* IE6 */
+/* line 136, ../sass/_channel-display.scss */
+*:first-child + html .view-bcr-channels {
+  zoom: 1;
+}
+
+/* IE7 */
 /* line 2, ../sass/_blog.scss */
 .view-bcr-blog-recent .views-row {
   width: 220px;
@@ -544,6 +577,11 @@ a:hover {
 /* line 35, ../sass/_page.scss */
 .panel-flexible .panel-separator a {
   text-decoration: underline !important;
+}
+
+/* line 40, ../sass/_page.scss */
+.region-footer {
+  border: 0;
 }
 
 /* line 4, ../sass/_player.scss */
@@ -1130,10 +1168,4 @@ ul.nav li.dropdown ul.dropdown-menu {
 /* line 30, ../sass/_override.scss */
 .node-type-channel .img-responsive {
   max-width: none;
-}
-
-/* line 34, ../sass/_override.scss */
-.region-footer {
-  border: 0;
-  background: none;
 }
