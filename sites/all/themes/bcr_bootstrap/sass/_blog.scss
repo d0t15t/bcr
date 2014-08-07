@@ -28,10 +28,12 @@
       width: 220px;
       display: inline-block;
       margin-right: 20px;
+      border: 1px solid black;
       &:first-child {
         width: auto;
         margin-right: 0;
         display: block;
+        border: 0;
       }
       &:nth-child(4),
       &:nth-child(7),

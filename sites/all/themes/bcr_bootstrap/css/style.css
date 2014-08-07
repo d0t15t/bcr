@@ -354,18 +354,20 @@ a:hover {
   width: 220px;
   display: inline-block;
   margin-right: 20px;
+  border: 1px solid black;
 }
-/* line 31, ../sass/_blog.scss */
+/* line 32, ../sass/_blog.scss */
 .blog-post-region .field-type-image .field-item:first-child {
   width: auto;
   margin-right: 0;
   display: block;
+  border: 0;
 }
-/* line 41, ../sass/_blog.scss */
+/* line 43, ../sass/_blog.scss */
 .blog-post-region .field-type-image .field-item:nth-child(4), .blog-post-region .field-type-image .field-item:nth-child(7), .blog-post-region .field-type-image .field-item:nth-child(10), .blog-post-region .field-type-image .field-item:nth-child(13), .blog-post-region .field-type-image .field-item:nth-child(16), .blog-post-region .field-type-image .field-item:nth-child(19) {
   margin-right: 0;
 }
-/* line 46, ../sass/_blog.scss */
+/* line 48, ../sass/_blog.scss */
 .blog-post-region .field-name-body {
   clear: both;
 }
