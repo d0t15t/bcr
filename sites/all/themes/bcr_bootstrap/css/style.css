@@ -344,6 +344,15 @@ a:hover {
   clear: both;
 }
 
+/* line 24, ../sass/_blog.scss */
+.blog-post-region .field-type-image {
+  margin-bottom: 40px;
+}
+/* line 26, ../sass/_blog.scss */
+.blog-post-region .field-type-image .field-item {
+  margin-bottom: 20px;
+}
+
 /* line 11, ../sass/_menus.scss */
 .menu-wrapper .menu .leaf {
   background-repeat: no-repeat !important;
