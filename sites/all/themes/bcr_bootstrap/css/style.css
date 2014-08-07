@@ -356,21 +356,19 @@ a:hover {
   overflow: hidden;
   display: inline-block;
   margin-right: 20px;
-  border: 1px solid black;
 }
-/* line 34, ../sass/_blog.scss */
+/* line 33, ../sass/_blog.scss */
 .blog-post-region .field-type-image .field-item:first-child {
   width: auto;
   max-height: none;
   margin-right: 0;
   display: block;
-  border: 0;
 }
-/* line 46, ../sass/_blog.scss */
+/* line 44, ../sass/_blog.scss */
 .blog-post-region .field-type-image .field-item:nth-child(4), .blog-post-region .field-type-image .field-item:nth-child(7), .blog-post-region .field-type-image .field-item:nth-child(10), .blog-post-region .field-type-image .field-item:nth-child(13), .blog-post-region .field-type-image .field-item:nth-child(16), .blog-post-region .field-type-image .field-item:nth-child(19) {
   margin-right: 0;
 }
-/* line 51, ../sass/_blog.scss */
+/* line 49, ../sass/_blog.scss */
 .blog-post-region .field-name-body {
   clear: both;
 }
