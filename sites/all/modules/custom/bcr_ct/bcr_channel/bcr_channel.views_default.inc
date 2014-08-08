@@ -56,7 +56,11 @@ function bcr_channel_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'channel' => 'channel',
+    'channel_ads' => 'channel_ads',
   );
+
+  /* Display: Content pane */
+  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
   $export['bcr_channels'] = $view;
 
   return $export;

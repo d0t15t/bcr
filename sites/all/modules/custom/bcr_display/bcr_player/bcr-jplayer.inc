@@ -24,7 +24,7 @@
 
   //]]>
 </script>
-<img class="bcr-logo" src="/sites/default/files/jplayer/bcr-logo.png">
+<img class="bcr-logo" src="/sites/all/modules/custom/jplayer/bcr-logo.png">
 <div id="jquery_jplayer_1" class="jp-jplayer"></div>
 <div class="jp-audio">
 

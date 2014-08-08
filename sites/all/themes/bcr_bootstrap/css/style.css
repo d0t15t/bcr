@@ -310,14 +310,26 @@ a:hover {
   clear: both;
   height: 0;
 }
+/* line 134, ../sass/_channel-display.scss */
+.view-bcr-channels .node-channel-ads {
+  width: 220px;
+  height: 160px;
+  position: absolute;
+  overflow: hidden;
+}
+/* line 140, ../sass/_channel-display.scss */
+.view-bcr-channels .node-channel-ads .field-type-image {
+  top: 0px;
+  position: absolute;
+}
 
-/* line 135, ../sass/_channel-display.scss */
+/* line 148, ../sass/_channel-display.scss */
 * html .view-bcr-channels {
   zoom: 1;
 }
 
 /* IE6 */
-/* line 136, ../sass/_channel-display.scss */
+/* line 149, ../sass/_channel-display.scss */
 *:first-child + html .view-bcr-channels {
   zoom: 1;
 }

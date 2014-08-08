@@ -18,7 +18,7 @@ function bcr_channel_default_fe_block_settings() {
     'delta' => 'bcr_channels_grid',
     'module' => 'bcr_blocks',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
@@ -28,8 +28,8 @@ function bcr_channel_default_fe_block_settings() {
         'weight' => 0,
       ),
       'bcr_bootstrap' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'footer',
+        'status' => 1,
         'theme' => 'bcr_bootstrap',
         'weight' => 0,
       ),
@@ -40,7 +40,7 @@ function bcr_channel_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => '',
+    'title' => '<none>',
     'visibility' => 0,
   );
 

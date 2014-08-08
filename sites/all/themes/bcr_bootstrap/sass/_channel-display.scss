@@ -130,6 +130,19 @@ $gutter_adjust: 20px;
     clear: both;
     height: 0;
   }
+
+  .node-channel-ads {
+//    display: none;
+    width: 220px;
+    height: 160px;
+    position: absolute;
+    overflow: hidden;
+    .field-type-image {
+      top: 0px;
+      position: absolute;
+    }
+  }
+
 }
 
 * html .view-bcr-channels             { zoom: 1; } /* IE6 */
