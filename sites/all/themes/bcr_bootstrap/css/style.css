@@ -418,7 +418,7 @@ a:hover {
   float: left;
   background-position: top left;
   background-size: 34px;
-  opacity: 0.4;
+  opacity: 0.3;
   border: 0;
   margin-right: 0;
   margin-top: 0 !important;
@@ -598,6 +598,11 @@ a:hover {
 }
 
 /* line 40, ../sass/_page.scss */
+.field-slideshow-wrapper {
+  margin: 40px 0;
+}
+
+/* line 44, ../sass/_page.scss */
 .region-footer {
   border: 0;
 }
