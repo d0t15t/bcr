@@ -185,7 +185,7 @@ a:hover {
   float: left;
   width: 220px;
   margin-right: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 /* line 25, ../sass/_channel-display.scss */
 .view-bcr-channels .views-row:nth-child(4n) {
@@ -339,34 +339,34 @@ a:hover {
 .view-bcr-blog-recent .views-row {
   width: 220px;
   float: left;
-  padding-bottom: 30px;
   margin: 0 20px 0 0;
 }
-/* line 8, ../sass/_blog.scss */
+/* line 7, ../sass/_blog.scss */
 .view-bcr-blog-recent .views-row h4 {
   font-size: 14px;
   line-height: 1.5em;
 }
-/* line 13, ../sass/_blog.scss */
+/* line 12, ../sass/_blog.scss */
 .view-bcr-blog-recent .views-row:nth-child(3n) {
   margin-right: 0;
 }
-/* line 17, ../sass/_blog.scss */
+/* line 16, ../sass/_blog.scss */
 .view-bcr-blog-recent .views-row:nth-child(3n+1) {
   clear: both;
 }
 
-/* line 24, ../sass/_blog.scss */
+/* line 23, ../sass/_blog.scss */
 .blog-post-region .field-type-image {
   padding-bottom: 20px;
 }
-/* line 26, ../sass/_blog.scss */
+/* line 25, ../sass/_blog.scss */
 .blog-post-region .field-type-image .field-item {
   margin-bottom: 20px;
   width: 220px;
   max-height: 160px;
   overflow: hidden;
   display: inline-block;
+  vertical-align: top;
   margin-right: 20px;
 }
 /* line 33, ../sass/_blog.scss */
@@ -385,118 +385,94 @@ a:hover {
   clear: both;
 }
 
+/* line 9, ../sass/_menus.scss */
+.menu-wrapper .menu {
+  width: 220px;
+}
 /* line 11, ../sass/_menus.scss */
 .menu-wrapper .menu .leaf {
   background-repeat: no-repeat !important;
 }
-/* line 15, ../sass/_menus.scss */
-.menu-wrapper .menu .leaf-soundcloud-link {
-  width: 69px;
-  height: 20px;
-  margin-right: 4.6px !important;
-  overflow: hidden;
-  position: relative;
-  margin-right: 0px !important;
-}
-/* line 37, ../sass/_var.scss */
-.menu-wrapper .menu .leaf-soundcloud-link a, .menu-wrapper .menu .leaf-soundcloud-link a:link, .menu-wrapper .menu .leaf-soundcloud-link a:visited {
-  position: relative;
-}
-/* line 43, ../sass/_var.scss */
-.menu-wrapper .menu .leaf-soundcloud-link:hover a:hover {
-  position: relative;
-  top: -20px;
-}
 /* line 21, ../sass/_menus.scss */
-.menu-wrapper .menu .leaf-twitter-link {
-  width: 48px;
-  height: 24px;
-  margin-right: 3.2px !important;
-  overflow: hidden;
-  position: relative;
-}
-/* line 37, ../sass/_var.scss */
-.menu-wrapper .menu .leaf-twitter-link a, .menu-wrapper .menu .leaf-twitter-link a:link, .menu-wrapper .menu .leaf-twitter-link a:visited {
-  position: relative;
-}
-/* line 43, ../sass/_var.scss */
-.menu-wrapper .menu .leaf-twitter-link:hover a:hover {
-  position: relative;
-  top: -24px;
-}
-/* line 24, ../sass/_menus.scss */
-.menu-wrapper .menu .leaf-facebook-link {
-  width: 48px;
-  height: 24px;
-  margin-right: 3.2px !important;
-  overflow: hidden;
-  position: relative;
-}
-/* line 37, ../sass/_var.scss */
-.menu-wrapper .menu .leaf-facebook-link a, .menu-wrapper .menu .leaf-facebook-link a:link, .menu-wrapper .menu .leaf-facebook-link a:visited {
-  position: relative;
-}
-/* line 43, ../sass/_var.scss */
-.menu-wrapper .menu .leaf-facebook-link:hover a:hover {
-  position: relative;
-  top: -24px;
-}
-/* line 27, ../sass/_menus.scss */
-.menu-wrapper .menu .leaf-youtube-link {
-  width: 48px;
-  height: 22px;
-  margin-right: 3.2px !important;
-  overflow: hidden;
-  position: relative;
-}
-/* line 37, ../sass/_var.scss */
-.menu-wrapper .menu .leaf-youtube-link a, .menu-wrapper .menu .leaf-youtube-link a:link, .menu-wrapper .menu .leaf-youtube-link a:visited {
-  position: relative;
-}
-/* line 43, ../sass/_var.scss */
-.menu-wrapper .menu .leaf-youtube-link:hover a:hover {
-  position: relative;
-  top: -22px;
-}
-/* line 30, ../sass/_menus.scss */
-.menu-wrapper .menu .leaf-instagram-link {
-  width: 48px;
-  height: 22px;
-  margin-right: 3.2px !important;
-  overflow: hidden;
-  position: relative;
-}
-/* line 37, ../sass/_var.scss */
-.menu-wrapper .menu .leaf-instagram-link a, .menu-wrapper .menu .leaf-instagram-link a:link, .menu-wrapper .menu .leaf-instagram-link a:visited {
-  position: relative;
-}
-/* line 43, ../sass/_var.scss */
-.menu-wrapper .menu .leaf-instagram-link:hover a:hover {
-  position: relative;
-  top: -22px;
-}
-/* line 33, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-soundcloud-link,
+.menu-wrapper .menu .leaf-twitter-link,
+.menu-wrapper .menu .leaf-facebook-link,
+.menu-wrapper .menu .leaf-youtube-link,
+.menu-wrapper .menu .leaf-instagram-link,
 .menu-wrapper .menu .leaf-mail-link {
-  width: 48px;
-  height: 22px;
-  margin-right: 3.2px !important;
-  overflow: hidden;
-  position: relative;
+  float: left;
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
 }
-/* line 37, ../sass/_var.scss */
-.menu-wrapper .menu .leaf-mail-link a, .menu-wrapper .menu .leaf-mail-link a:link, .menu-wrapper .menu .leaf-mail-link a:visited {
-  position: relative;
-}
-/* line 43, ../sass/_var.scss */
-.menu-wrapper .menu .leaf-mail-link:hover a:hover {
-  position: relative;
-  top: -22px;
+/* line 26, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-soundcloud-link a,
+.menu-wrapper .menu .leaf-twitter-link a,
+.menu-wrapper .menu .leaf-facebook-link a,
+.menu-wrapper .menu .leaf-youtube-link a,
+.menu-wrapper .menu .leaf-instagram-link a,
+.menu-wrapper .menu .leaf-mail-link a {
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-position: top left;
+  background-size: 34px;
+  opacity: 0.3;
+  border: 0;
+  margin-right: 0;
+  margin-top: 0 !important;
 }
 /* line 36, ../sass/_menus.scss */
-.menu-wrapper .menu .leaf-youtube-link, .menu-wrapper .menu .leaf-instagram-link, .menu-wrapper .menu .leaf-mail-link {
-  margin-top: 3px;
+.menu-wrapper .menu .leaf-soundcloud-link a:hover,
+.menu-wrapper .menu .leaf-twitter-link a:hover,
+.menu-wrapper .menu .leaf-facebook-link a:hover,
+.menu-wrapper .menu .leaf-youtube-link a:hover,
+.menu-wrapper .menu .leaf-instagram-link a:hover,
+.menu-wrapper .menu .leaf-mail-link a:hover {
+  border: 0;
+  opacity: 1;
 }
-/* line 41, ../sass/_menus.scss */
+/* line 43, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-soundcloud-link {
+  margin-top: 15px;
+}
+/* line 45, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-soundcloud-link a {
+  background-image: url(../images/menu-soundcloud);
+}
+/* line 49, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-twitter-link {
+  margin-top: 15px;
+}
+/* line 51, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-twitter-link a {
+  background-image: url(../images/menu-twitter);
+}
+/* line 55, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-facebook-link {
+  margin-top: 15px;
+}
+/* line 57, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-facebook-link a {
+  background-image: url(../images/menu-facebook);
+}
+/* line 61, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-youtube-link {
+  clear: both;
+}
+/* line 63, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-youtube-link a {
+  background-image: url(../images/menu-youtube);
+}
+/* line 68, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-instagram-link a {
+  background-image: url(../images/menu-instagram);
+}
+/* line 73, ../sass/_menus.scss */
+.menu-wrapper .menu .leaf-mail-link a {
+  background-image: url(../images/menu-mail);
+}
+/* line 79, ../sass/_menus.scss */
 .menu-wrapper .navbar-brand {
   display: block;
   width: 150px;
@@ -505,16 +481,16 @@ a:hover {
   background-size: 150px;
   margin-bottom: 20px;
 }
-/* line 47, ../sass/_menus.scss */
+/* line 85, ../sass/_menus.scss */
 .menu-wrapper .navbar-brand:hover {
   background-position: bottom left;
 }
-/* line 52, ../sass/_menus.scss */
+/* line 90, ../sass/_menus.scss */
 .homepage-body .menu-wrapper .navbar-brand {
   display: none;
 }
 
-/* line 59, ../sass/_menus.scss */
+/* line 97, ../sass/_menus.scss */
 .region-navigation {
   background: none;
   border: 0px;
@@ -522,14 +498,14 @@ a:hover {
   padding-right: 0px;
   margin-top: 0px !important;
 }
-/* line 66, ../sass/_menus.scss */
+/* line 104, ../sass/_menus.scss */
 .region-navigation .menu-wrapper {
   position: fixed;
   top: 100px;
   margin-left: 10px;
   z-index: 8;
 }
-/* line 73, ../sass/_menus.scss */
+/* line 111, ../sass/_menus.scss */
 .region-navigation ul.navbar-nav {
   font-family: 'DIN Next W02 Medium', 'DIN Alternate', 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
@@ -537,14 +513,14 @@ a:hover {
   font-weight: bold;
   z-index: 10;
 }
-/* line 78, ../sass/_menus.scss */
+/* line 116, ../sass/_menus.scss */
 .region-navigation ul.navbar-nav li {
   display: block;
   margin: 5px 0;
   float: none;
   font-size: 14px;
 }
-/* line 85, ../sass/_menus.scss */
+/* line 123, ../sass/_menus.scss */
 .region-navigation ul.navbar-nav li a {
   padding: 3px 0px 0px 0px !important;
   margin: 5px 0;
@@ -554,27 +530,27 @@ a:hover {
   line-height: 1em;
   border-bottom: 1px solid transparent;
 }
-/* line 93, ../sass/_menus.scss */
+/* line 131, ../sass/_menus.scss */
 .region-navigation ul.navbar-nav li a:hover {
   color: black !important;
   text-decoration: none !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
-/* line 100, ../sass/_menus.scss */
+/* line 138, ../sass/_menus.scss */
 .region-navigation ul.navbar-nav li.active-trail a.active {
   background: none !important;
   text-decoration: none !important;
   border-bottom: 1px solid black;
 }
-/* line 116, ../sass/_menus.scss */
+/* line 154, ../sass/_menus.scss */
 .region-navigation #block-menu-menu-main-2 .menu .leaf a {
   padding-top: 0px !important;
 }
-/* line 118, ../sass/_menus.scss */
+/* line 156, ../sass/_menus.scss */
 .region-navigation #block-menu-menu-main-2 .menu .leaf a:hover {
   background: none;
 }
-/* line 125, ../sass/_menus.scss */
+/* line 163, ../sass/_menus.scss */
 .region-navigation a {
   font-size: .9em;
   letter-spacing: 1px;
@@ -590,14 +566,15 @@ a:hover {
 /* line 9, ../sass/_page.scss */
 #homepage-panel .panels-flexible-region-last h2 {
   margin-top: 0;
+  margin-bottom: 30px;
 }
 
-/* line 16, ../sass/_page.scss */
+/* line 17, ../sass/_page.scss */
 .main-container .row {
   margin-left: 235px;
 }
 
-/* line 21, ../sass/_page.scss */
+/* line 22, ../sass/_page.scss */
 .page-header {
   font-size: 92px;
   text-align: right;
@@ -605,22 +582,27 @@ a:hover {
   border: 0;
 }
 
-/* line 28, ../sass/_page.scss */
+/* line 29, ../sass/_page.scss */
 .field-item {
   font-size: 16px;
   line-height: 1.6em;
 }
 
-/* line 33, ../sass/_page.scss */
+/* line 34, ../sass/_page.scss */
 .panel-flexible .panel-separator {
   margin-bottom: 2em;
 }
-/* line 35, ../sass/_page.scss */
+/* line 36, ../sass/_page.scss */
 .panel-flexible .panel-separator a {
   text-decoration: underline !important;
 }
 
-/* line 40, ../sass/_page.scss */
+/* line 41, ../sass/_page.scss */
+.field-slideshow-wrapper {
+  margin: 40px 0;
+}
+
+/* line 45, ../sass/_page.scss */
 .region-footer {
   border: 0;
 }

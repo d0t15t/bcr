@@ -8,6 +8,7 @@
   .panels-flexible-region-last {
     h2 {
       margin-top: 0;
+      margin-bottom: 30px;
     }
   }
 }
@@ -35,6 +36,10 @@
   a {
     text-decoration: underline !important;
   }
+}
+
+.field-slideshow-wrapper {
+  margin: 40px 0;
 }
 
 .region-footer {
