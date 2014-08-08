@@ -9,19 +9,32 @@ $gutter_adjust: 20px;
   width: 960px;
   position: relative;
   z-index: 9;
-  background: white;
   text-align: center;
-  margin: 80px 5px 0;
+  margin: 80px 10px 0;
+
+  padding-bottom: 160px;
+
+  background: white url(../images/logospot_footer.png) no-repeat bottom 60px center;
+  background-size: 90px;
+
   .views-row {
-    display: inline-block;
+    float: left;
+    width: 220px;
+    margin-right: 20px;
     margin-bottom: $gutter_adjust * 2;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+    &:nth-child(4n + 1) {
+      clear: both;
+    }
   }
   .field-name-channel-image-compound {
     .channel-img-wrapper {
       position: relative;
       width: 220px;
       height: 160px;
-      margin: 0px 15px $gutter_adjust - 5 0px;
+      margin: 0;
       img {
         width: 220px;
         height: auto;
@@ -109,5 +122,16 @@ $gutter_adjust: 20px;
     height: 0px;
   }
 
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
 }
+
+* html .view-bcr-channels             { zoom: 1; } /* IE6 */
+*:first-child+html .view-bcr-channels { zoom: 1; } /* IE7 */
 

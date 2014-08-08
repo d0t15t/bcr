@@ -13,7 +13,7 @@
 function bcr_bootstrap_preprocess_html(&$variables){
   $variables['persistent'] = render($variables['page']['persistent']);
   drupal_add_css('http://bcr-dev.dyss.net/css/blog-styles.css', array('type' => 'external'));
-  drupal_add_js('http://fast.fonts.net/jsapi/ed30f232-f0d5-4b7c-b683-d3a52e6ec694.js', array('type' => 'external'));
+  drupal_add_js('http://fast.fonts.net/jsapi/120f729d-c82d-4bed-9ae8-3563ea0a5c45.js', array('type' => 'external')); 
 
 //  $background = ["blue", "red", "yellow", "green", "purple"];
   $background = array("blue", "red", "yellow", "green", "purple");

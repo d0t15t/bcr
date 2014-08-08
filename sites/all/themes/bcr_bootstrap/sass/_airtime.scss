@@ -6,6 +6,11 @@
   }
 }
 
+#headerLiveHolder ul li, #headerLiveTrackHolder ul li {
+  overflow: visible;
+  height: 18px;
+}
+
 #headerLiveHolder {
   position: fixed;
   top: 12px;

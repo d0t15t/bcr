@@ -1,0 +1,52 @@
+.view-bcr-blog-recent {
+  .views-row {
+    width: 220px;
+    float: left;
+    padding-bottom: 30px;
+    margin: 0 20px 0 0;
+
+    h4 {
+      font-size: 14px;
+      line-height: 1.5em;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3n+1) {
+      clear: both;
+    }
+  }
+}
+
+.blog-post-region {
+  .field-type-image {
+    padding-bottom: 20px;
+    .field-item {
+      margin-bottom: 20px;
+      width: 220px;
+      max-height: 160px;
+      overflow: hidden;
+      display: inline-block;
+      margin-right: 20px;
+      &:first-child {
+        width: auto;
+        max-height: none;
+        margin-right: 0;
+        display: block;
+      }
+      &:nth-child(4),
+      &:nth-child(7),
+      &:nth-child(10),
+      &:nth-child(13),
+      &:nth-child(16),
+      &:nth-child(19) {
+        margin-right: 0;
+      }
+    }
+  }
+  .field-name-body {
+    clear: both;
+  }
+}
