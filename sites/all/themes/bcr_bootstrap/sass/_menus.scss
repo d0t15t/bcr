@@ -7,34 +7,72 @@ body {
 
 .menu-wrapper {
   .menu {
-
+    width: 220px;
     .leaf {
       background-repeat: no-repeat !important;
       //overflow: hidden;
     }
+
+    .leaf-soundcloud-link,
+    .leaf-twitter-link,
+    .leaf-facebook-link,
+    .leaf-youtube-link,
+    .leaf-instagram-link,
+    .leaf-mail-link {
+      float: left;
+      width: 34px;
+      height: 34px;
+      margin-right: 10px;
+      a {
+        width: 100%;
+        height: 100%;
+        float: left;
+        background-position: top left;
+        background-size: 34px;
+        opacity: 0.4;
+        border: 0;
+        margin-right: 0;
+        margin-top: 0 !important;
+        &:hover {
+          border: 0;
+          opacity: 1;
+        }
+      }
+    }
+
     .leaf-soundcloud-link {
-      @include menu-leaf-dimension(23px, 20px); // width, height
-      //margin-left: 10px;
-      //margin-top: 3px;
-      margin-right: 0px !important;
+      margin-top: 15px;
+      a {
+        background-image: url(../images/menu-soundcloud);
+      }
     }
     .leaf-twitter-link {
-      @include menu-leaf-dimension(16px, 24px); // width, height
+      margin-top: 15px;
+      a {
+        background-image: url(../images/menu-twitter);
+      }
     }
     .leaf-facebook-link {
-      @include menu-leaf-dimension(16px, 24px); // width, height
+      margin-top: 15px;
+      a {
+        background-image: url(../images/menu-facebook);
+      }
     }
     .leaf-youtube-link {
-      @include menu-leaf-dimension(16px, 22px); // width, height
+      clear: both;
+      a {
+        background-image: url(../images/menu-youtube);
+      }
     }
     .leaf-instagram-link {
-      @include menu-leaf-dimension(16px, 22px); // width, height
+      a {
+        background-image: url(../images/menu-instagram);
+      }
     }
     .leaf-mail-link {
-      @include menu-leaf-dimension(16px, 22px); // width, height
-    }
-    .leaf-youtube-link, .leaf-instagram-link, .leaf-mail-link {
-      margin-top: 3px;
+      a {
+        background-image: url(../images/menu-mail);
+      }
     }
   }
 

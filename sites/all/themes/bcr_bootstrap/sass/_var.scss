@@ -24,29 +24,6 @@ $logo_height: 200px;
 
 // mixins
 
-@mixin menu-leaf-dimension($w, $h) {
-  //width: $w;
-  width: $w * 3;
-  //width: $w + ($w / 2);
-  height: $h;
-  margin-right: $w / 5 !important;
-  //margin-right: $w + ($w/3) !important;
-  //margin-right: $w;
-  overflow: hidden;
-  position: relative;
-  a, a:link, a:visited {
-    position: relative;
-  }
-  //position:relative;
-  //top: $h / 2;
-  &:hover {
-    a:hover {
-      position: relative;
-      top: -$h;
-    }
-  }
-}
-
 @mixin header-font {
   font-family: 'DIN Next W02 Medium', 'DIN Alternate', 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
