@@ -1,0 +1,18 @@
+html {
+    background: red;
+    font-size: 13px;
+    font-family: arial, helvetica, sans-serif;
+}
+body {
+    background: #f5f5f5;
+}
+.header {
+    display: none;
+}
+.message-input {
+    font-size: 13px;
+    padding: 0 10px !important;
+}
+.panel-button {
+    background: #bbb;
+}
