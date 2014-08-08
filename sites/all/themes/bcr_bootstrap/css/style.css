@@ -185,7 +185,7 @@ a:hover {
   float: left;
   width: 220px;
   margin-right: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 /* line 25, ../sass/_channel-display.scss */
 .view-bcr-channels .views-row:nth-child(4n) {
@@ -339,28 +339,27 @@ a:hover {
 .view-bcr-blog-recent .views-row {
   width: 220px;
   float: left;
-  padding-bottom: 30px;
   margin: 0 20px 0 0;
 }
-/* line 8, ../sass/_blog.scss */
+/* line 7, ../sass/_blog.scss */
 .view-bcr-blog-recent .views-row h4 {
   font-size: 14px;
   line-height: 1.5em;
 }
-/* line 13, ../sass/_blog.scss */
+/* line 12, ../sass/_blog.scss */
 .view-bcr-blog-recent .views-row:nth-child(3n) {
   margin-right: 0;
 }
-/* line 17, ../sass/_blog.scss */
+/* line 16, ../sass/_blog.scss */
 .view-bcr-blog-recent .views-row:nth-child(3n+1) {
   clear: both;
 }
 
-/* line 24, ../sass/_blog.scss */
+/* line 23, ../sass/_blog.scss */
 .blog-post-region .field-type-image {
   padding-bottom: 20px;
 }
-/* line 26, ../sass/_blog.scss */
+/* line 25, ../sass/_blog.scss */
 .blog-post-region .field-type-image .field-item {
   margin-bottom: 20px;
   width: 220px;
@@ -370,18 +369,18 @@ a:hover {
   vertical-align: top;
   margin-right: 20px;
 }
-/* line 34, ../sass/_blog.scss */
+/* line 33, ../sass/_blog.scss */
 .blog-post-region .field-type-image .field-item:first-child {
   width: auto;
   max-height: none;
   margin-right: 0;
   display: block;
 }
-/* line 45, ../sass/_blog.scss */
+/* line 44, ../sass/_blog.scss */
 .blog-post-region .field-type-image .field-item:nth-child(4), .blog-post-region .field-type-image .field-item:nth-child(7), .blog-post-region .field-type-image .field-item:nth-child(10), .blog-post-region .field-type-image .field-item:nth-child(13), .blog-post-region .field-type-image .field-item:nth-child(16), .blog-post-region .field-type-image .field-item:nth-child(19) {
   margin-right: 0;
 }
-/* line 50, ../sass/_blog.scss */
+/* line 49, ../sass/_blog.scss */
 .blog-post-region .field-name-body {
   clear: both;
 }
@@ -567,14 +566,15 @@ a:hover {
 /* line 9, ../sass/_page.scss */
 #homepage-panel .panels-flexible-region-last h2 {
   margin-top: 0;
+  margin-bottom: 30px;
 }
 
-/* line 16, ../sass/_page.scss */
+/* line 17, ../sass/_page.scss */
 .main-container .row {
   margin-left: 235px;
 }
 
-/* line 21, ../sass/_page.scss */
+/* line 22, ../sass/_page.scss */
 .page-header {
   font-size: 92px;
   text-align: right;
@@ -582,27 +582,27 @@ a:hover {
   border: 0;
 }
 
-/* line 28, ../sass/_page.scss */
+/* line 29, ../sass/_page.scss */
 .field-item {
   font-size: 16px;
   line-height: 1.6em;
 }
 
-/* line 33, ../sass/_page.scss */
+/* line 34, ../sass/_page.scss */
 .panel-flexible .panel-separator {
   margin-bottom: 2em;
 }
-/* line 35, ../sass/_page.scss */
+/* line 36, ../sass/_page.scss */
 .panel-flexible .panel-separator a {
   text-decoration: underline !important;
 }
 
-/* line 40, ../sass/_page.scss */
+/* line 41, ../sass/_page.scss */
 .field-slideshow-wrapper {
   margin: 40px 0;
 }
 
-/* line 44, ../sass/_page.scss */
+/* line 45, ../sass/_page.scss */
 .region-footer {
   border: 0;
 }
