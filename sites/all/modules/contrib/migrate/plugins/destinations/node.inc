@@ -66,29 +66,29 @@ class MigrateDestinationNode extends MigrateDestinationEntity {
                            array('@doc' => 'http://drupal.org/node/1349696#title'))
                          . $node_type->title_label . '</a>';
     }
-    $fields['uid'] = t('<a href="@doc">Authored by (uid)</a>',
+    $fields['uid'] = t('Node: <a href="@doc">Authored by (uid)</a>',
                     array('@doc' => 'http://drupal.org/node/1349696#uid'));
-    $fields['created'] = t('<a href="@doc">Created timestamp</a>',
+    $fields['created'] = t('Node: <a href="@doc">Created timestamp</a>',
                     array('@doc' => 'http://drupal.org/node/1349696#created'));
-    $fields['changed'] = t('<a href="@doc">Modified timestamp</a>',
+    $fields['changed'] = t('Node: <a href="@doc">Modified timestamp</a>',
                     array('@doc' => 'http://drupal.org/node/1349696#changed'));
-    $fields['status'] = t('<a href="@doc">Published</a>',
+    $fields['status'] = t('Node: <a href="@doc">Published</a>',
                     array('@doc' => 'http://drupal.org/node/1349696#status'));
-    $fields['promote'] = t('<a href="@doc">Promoted to front page</a>',
+    $fields['promote'] = t('Node: <a href="@doc">Promoted to front page</a>',
                     array('@doc' => 'http://drupal.org/node/1349696#promote'));
-    $fields['sticky'] = t('<a href="@doc">Sticky at top of lists</a>',
+    $fields['sticky'] = t('Node: <a href="@doc">Sticky at top of lists</a>',
                     array('@doc' => 'http://drupal.org/node/1349696#sticky'));
-    $fields['revision'] = t('<a href="@doc">Create new revision</a>',
+    $fields['revision'] = t('Node: <a href="@doc">Create new revision</a>',
                     array('@doc' => 'http://drupal.org/node/1349696#revision'));
-    $fields['log'] = t('<a href="@doc">Revision Log message</a>',
+    $fields['log'] = t('Node: <a href="@doc">Revision Log message</a>',
                     array('@doc' => 'http://drupal.org/node/1349696#log'));
-    $fields['language'] = t('<a href="@doc">Language (fr, en, ...)</a>',
+    $fields['language'] = t('Node: <a href="@doc">Language (fr, en, ...)</a>',
                     array('@doc' => 'http://drupal.org/node/1349696#language'));
-    $fields['tnid'] = t('<a href="@doc">The translation set id for this node</a>',
+    $fields['tnid'] = t('Node: <a href="@doc">The translation set id for this node</a>',
                     array('@doc' => 'http://drupal.org/node/1349696#tnid'));
-    $fields['translate'] = t('<a href="@doc">A boolean indicating whether this translation page needs to be updated</a>',
+    $fields['translate'] = t('Node: <a href="@doc">A boolean indicating whether this translation page needs to be updated</a>',
                     array('@doc' => 'http://drupal.org/node/1349696#translate'));
-    $fields['revision_uid'] = t('<a href="@doc">Modified (uid)</a>',
+    $fields['revision_uid'] = t('Node: <a href="@doc">Modified (uid)</a>',
                     array('@doc' => 'http://drupal.org/node/1349696#revision_uid'));
     $fields['is_new'] = t('Option: <a href="@doc">Indicates a new node with the specified nid should be created</a>',
                     array('@doc' => 'http://drupal.org/node/1349696#is_new'));
@@ -177,8 +177,7 @@ class MigrateDestinationNode extends MigrateDestinationEntity {
         $node->uid = $old_node->uid;
       }
     }
-
-    if (!isset($node->type)) {
+    elseif (!isset($node->type)) {
       // Default the type to our designated destination bundle (by doing this
       // conditionally, we permit some flexibility in terms of implementing
       // migrations which can affect more than one type).
@@ -208,21 +207,13 @@ class MigrateDestinationNode extends MigrateDestinationEntity {
       if (isset($node->uid)) {
         $uid = $node->uid;
       }
-      if (isset($node->revision)) {
-        $revision = $node->revision;
-      }
-
       node_object_prepare($node);
-
       if (isset($created)) {
         $node->created = $created;
       }
       // No point to resetting $node->changed here, node_save() will overwrite it
       if (isset($uid)) {
         $node->uid = $uid;
-      }
-      if (isset($revision)) {
-        $node->revision = $revision;
       }
     }
 
@@ -253,11 +244,6 @@ class MigrateDestinationNode extends MigrateDestinationEntity {
     }
     else {
       $updating = FALSE;
-    }
-
-    // Make sure that if is_new is not TRUE, it is not present.
-    if (isset($node->is_new) && empty($node->is_new)) {
-      unset($node->is_new);
     }
 
     migrate_instrument_start('node_save');

@@ -160,7 +160,7 @@ function blocktheme_form_block_add_block_form_alter(&$form, &$form_state) {
  */
 function blocktheme_set($blocktheme, $blocktheme_vars = NULL) {
   variable_set('blocktheme', $blocktheme);
-  if ($blocktheme_vars !== NULL) {
+  if ($blocktheme_vars) {
     variable_set('blocktheme_vars', $blocktheme_vars);
   }
 }

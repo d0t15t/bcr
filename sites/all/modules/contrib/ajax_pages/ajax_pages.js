@@ -252,9 +252,6 @@ Drupal.ajax.prototype.commands.ajaxPagesPageHtml = function(ajax, response, stat
       $element[0].scrollIntoView(true);
     }
   }
-  else {
-    $("html, body").animate({ scrollTop: 0 }, 0);
-  }
 
   // Attach all JavaScript behaviors to the new content, if it was successfully
   // added to the page, this if statement allows #ajax['wrapper'] to be

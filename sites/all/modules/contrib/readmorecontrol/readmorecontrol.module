@@ -78,12 +78,25 @@ function readmorecontrol_menu() {
  */
 function readmorecontrol_node_type_update($info) {
   if (!empty($info->old_type) && $info->old_type != $info->type) {
-    $setting = variable_get('readmorecontrol_behaviour__node__' . $info->type, 'always');
+    variable_set('readmorecontrol_behaviour__node__' . $info->type, variable_get('readmorecontrol_behaviour__node__' . $info->old_type, 'always'));
     variable_del('readmorecontrol_behaviour__node__' . $info->old_type);
-    variable_set('readmorecontrol_behaviour__node__' . $info->type, $setting);
 
-    variable_set('readmorecontrol_format__node__' . $info->type, variable_get('readmorecontrol_behaviour__node__' . $info->type, array()));
+    variable_set('readmorecontrol_format__node__' . $info->type, variable_get('readmorecontrol_format__node__' . $info->old_type, array()));
     variable_del('readmorecontrol_format__node__' . $info->old_type);
+
+    // Update all of the view modes if required.
+    $entity_info = entity_get_info('node');
+    foreach ($entity_info['view modes'] as $view_mode => $view_mode_settings) {
+      if ($old_settings = variable_get('readmorecontrol_behaviour__node__' . $info->old_type . '__' . $view_mode, FALSE)) {
+        variable_set('readmorecontrol_behaviour__node__' . $info->type . '__' . $view_mode, $old_settings);
+        variable_del('readmorecontrol_behaviour__node__' . $info->old_type);
+      }
+      if ($old_settings = variable_get('readmorecontrol_format__node__' . $info->old_type . '__' . $view_mode, FALSE)) {
+        variable_set('readmorecontrol_format__node__' . $info->type . '__' . $view_mode, $old_settings);
+        variable_del('readmorecontrol_format__node__' . $info->old_type);
+      }
+    }
+
   }
 }
 
@@ -197,11 +210,12 @@ function readmorecontrol_entity_behaviour($entity_type, $bundle, $view_mode) {
     return 'none';
   }
   else {
-    $behaviour = variable_get("readmorecontrol_behaviour__{$entity_type}__{$bundle}__{$view_mode}", 'default');
+    $node_teaser = $entity_type == 'node' && $view_mode == 'teaser';
+    $behaviour = variable_get("readmorecontrol_behaviour__{$entity_type}__{$bundle}__{$view_mode}", $node_teaser ? 'default' : 'none');
     if ($behaviour == 'default') {
       $behaviour = variable_get("readmorecontrol_behaviour__{$entity_type}__{$bundle}", 'default');
       if ($behaviour == 'default') {
-        $system_default = $entity_type == 'node' && $view_mode == 'teaser' ? 'always' : 'none';
+        $system_default = $node_teaser ? 'always' : 'none';
         $behaviour = variable_get("readmorecontrol_behaviour__{$entity_type}", $system_default);
       }
     }
@@ -216,31 +230,31 @@ function readmorecontrol_format_settings($entity_type, $bundle = NULL, $view_mod
   $settings = array();
   if ($is_edit) {
     if ($view_mode && $view_mode != 'default') {
-      $settings += variable_get('readmorecontrol_format__' . $entity_type . '__' . $bundle. '__' . $view_mode, array('enabled' => 'global'));
+      $settings += (array) variable_get('readmorecontrol_format__' . $entity_type . '__' . $bundle. '__' . $view_mode, array('enabled' => 'global'));
     }
     elseif ($bundle) {
-      $settings += variable_get('readmorecontrol_format__' . $entity_type . '__' . $bundle, array('enabled' => 'global'));
+      $settings += (array) variable_get('readmorecontrol_format__' . $entity_type . '__' . $bundle, array('enabled' => 'global'));
     }
     else {
-      $settings += variable_get('readmorecontrol_format__' . $entity_type, array('enabled' => 'none'));
+      $settings += (array) variable_get('readmorecontrol_format__' . $entity_type, array('enabled' => 'none'));
     }
   }
   else {
     // Find the setting with the highest precesion, but discard if the use
     // global setting is selected.
     if ($view_mode) {
-      $settings += variable_get('readmorecontrol_format__' . $entity_type . '__' . $bundle. '__' . $view_mode, array('enabled' => 'global'));
+      $settings += (array) variable_get('readmorecontrol_format__' . $entity_type . '__' . $bundle. '__' . $view_mode, array('enabled' => 'global'));
       if (!$is_edit && $settings['enabled'] == 'global') {
         $settings = array();
       }
     }
     if ($bundle) {
-      $settings += variable_get('readmorecontrol_format__' . $entity_type . '__' . $bundle, array('enabled' => 'global'));
+      $settings += (array) variable_get('readmorecontrol_format__' . $entity_type . '__' . $bundle, array('enabled' => 'global'));
       if ($settings['enabled'] == 'global') {
         $settings = array();
       }
     }
-    $settings += variable_get('readmorecontrol_format__' . $entity_type, array('enabled' => 'none'));
+    $settings += (array) variable_get('readmorecontrol_format__' . $entity_type, array('enabled' => 'none'));
   }
 
   $settings += array(
