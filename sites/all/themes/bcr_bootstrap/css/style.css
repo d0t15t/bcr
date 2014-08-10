@@ -438,7 +438,7 @@ a:hover {
 }
 /* line 45, ../sass/_menus.scss */
 .menu-wrapper .menu .leaf-soundcloud-link a {
-  background-image: url(../images/menu-soundcloud);
+  background-image: url(../images/menu-soundcloud.png);
 }
 /* line 49, ../sass/_menus.scss */
 .menu-wrapper .menu .leaf-twitter-link {
@@ -446,7 +446,7 @@ a:hover {
 }
 /* line 51, ../sass/_menus.scss */
 .menu-wrapper .menu .leaf-twitter-link a {
-  background-image: url(../images/menu-twitter);
+  background-image: url(../images/menu-twitter.png);
 }
 /* line 55, ../sass/_menus.scss */
 .menu-wrapper .menu .leaf-facebook-link {
@@ -454,7 +454,7 @@ a:hover {
 }
 /* line 57, ../sass/_menus.scss */
 .menu-wrapper .menu .leaf-facebook-link a {
-  background-image: url(../images/menu-facebook);
+  background-image: url(../images/menu-facebook.png);
 }
 /* line 61, ../sass/_menus.scss */
 .menu-wrapper .menu .leaf-youtube-link {
@@ -462,15 +462,15 @@ a:hover {
 }
 /* line 63, ../sass/_menus.scss */
 .menu-wrapper .menu .leaf-youtube-link a {
-  background-image: url(../images/menu-youtube);
+  background-image: url(../images/menu-youtube.png);
 }
 /* line 68, ../sass/_menus.scss */
 .menu-wrapper .menu .leaf-instagram-link a {
-  background-image: url(../images/menu-instagram);
+  background-image: url(../images/menu-instagram.png);
 }
 /* line 73, ../sass/_menus.scss */
 .menu-wrapper .menu .leaf-mail-link a {
-  background-image: url(../images/menu-mail);
+  background-image: url(../images/menu-mail.png);
 }
 /* line 79, ../sass/_menus.scss */
 .menu-wrapper .navbar-brand {
