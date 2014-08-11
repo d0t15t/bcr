@@ -5,3 +5,39 @@
  */
 
 include_once 'bcr_channel.features.inc';
+
+/**
+ * ds fields
+ *
+ * add banner display field
+ *
+ * @param $entity_type
+ * @return array
+ */
+function bcr_channel_ds_fields_info($entity_type) {
+
+// Provide a custom field to display suite
+  $fields = array();
+
+  $fields['node']['banner'] = array(
+    'title' => t('Banner'),
+    'field_type' => DS_FIELD_TYPE_FUNCTION,
+    'function' => 'bcr_channel_ds_field_banner',
+  );
+
+  return $fields;
+}
+
+
+/**
+ *
+ * ds banner display field callback
+ *
+ * @param $field
+ * @return mixed|string
+ */
+function bcr_channel_ds_field_banner($field) {
+  $block = module_invoke('views','block_view','bcr_article_banner_insert-block');
+  $block = render($block) . '<div class="banner-info">Advertisement</div>';
+  return $block;
+}

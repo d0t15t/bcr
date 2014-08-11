@@ -27,6 +27,31 @@ function bcr_blog_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|blog|full';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'blog';
+  $ds_fieldsetting->view_mode = 'full';
+  $ds_fieldsetting->settings = array(
+    'links' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+    'service_links_displays_group' => array(
+      'weight' => '6',
+      'label' => 'hidden',
+      'format' => 'sld_group_image',
+    ),
+    'banner' => array(
+      'weight' => '2',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+  );
+  $export['node|blog|full'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|blog|teaser';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'blog';
@@ -126,17 +151,21 @@ function bcr_blog_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_image',
-        1 => 'field_banner_insert',
-        2 => 'body',
-        3 => 'field_file',
+        0 => 'links',
+        1 => 'field_image',
+        2 => 'banner',
+        3 => 'body',
+        4 => 'field_file',
+        5 => 'service_links_displays_group',
       ),
     ),
     'fields' => array(
+      'links' => 'ds_content',
       'field_image' => 'ds_content',
-      'field_banner_insert' => 'ds_content',
+      'banner' => 'ds_content',
       'body' => 'ds_content',
       'field_file' => 'ds_content',
+      'service_links_displays_group' => 'ds_content',
     ),
     'classes' => array(
       'layout_class' => array(
@@ -218,6 +247,24 @@ function bcr_blog_ds_layout_settings_info() {
     'hide_sidebars' => 0,
   );
   $export['node|blog|teaser_archive'] = $ds_layout;
+
+  return $export;
+}
+
+/**
+ * Implements hook_ds_view_modes_info().
+ */
+function bcr_blog_ds_view_modes_info() {
+  $export = array();
+
+  $ds_view_mode = new stdClass();
+  $ds_view_mode->api_version = 1;
+  $ds_view_mode->view_mode = 'full';
+  $ds_view_mode->label = 'Full';
+  $ds_view_mode->entities = array(
+    'node' => 'node',
+  );
+  $export['full'] = $ds_view_mode;
 
   return $export;
 }

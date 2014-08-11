@@ -55,6 +55,18 @@ function bcr_channel_fields_ds_fields_info($entity_type) {
     ),
   );
 
+  // custom pager field
+  if (module_exists('custom_pagers') && $entity_type == 'node') {
+    $pagers = _custom_pagers_load_all_pagers();
+    foreach ($pagers as $pager) {
+      $info = array();
+      $info['title'] = $pager->title;
+      $info['field_type'] = DS_FIELD_TYPE_PREPROCESS;
+      $info['ui_limit'][] = "{$pager->node_type}|*";
+      $fields['node']["custom_pager_{$pager->pid}"] = $info;
+    }
+  }
+
   return $fields;
 }
 
@@ -80,6 +92,10 @@ function bcr_channel_fields_ds_field_format_summary($field) {
  * custom field callbacks
  */
 
+function bcr_channel_fields_ds_pager_callback($field) {
+  $t=1;
+}
+
 /**
  *
  * @param $field
@@ -98,8 +114,9 @@ function bcr_channel_fields_ds_cmp_image($field) {
 
   // test for host entity field attributes
   if (
-    !$wrapped->raw()->field_image
-    || !$wrapped->raw()->title
+//    !$wrapped->raw()->field_image
+    !$wrapped->raw()->title
+//    || !$wrapped->raw()->title
     || !$wrapped->raw()->nid
   ) {
     return NULL;
@@ -115,82 +132,87 @@ function bcr_channel_fields_ds_cmp_image($field) {
 
   // base image
   $image_style = 'channel_block';
-  $img_uri = $wrapped->value()->field_image[LANGUAGE_NONE][0]['uri'];
-  $image_alt = $wrapped->value()->title;
-  $image_item = array(
-    'style_name' => $image_style,
-    'path' => $img_uri,
-    'width' => '',
-    'height' => '',
-    'alt' => $image_alt,
-    'title' => $image_alt,
-  );
-  $image_output =  theme('image_style', $image_item);
+  if (isset($wrapped->value()->field_image[LANGUAGE_NONE][0])) {
+    $img_uri = $wrapped->value()->field_image[LANGUAGE_NONE][0]['uri'];
+//  $img_uri = $wrapped->value()->field_image[LANGUAGE_NONE][0]['uri'];
 
-  // overlay image
-  // if no overlay image, use standard image with image desaturation
-  if ($wrapped->value()->field_image_overlay) {
-    $img_uri = $wrapped->value()->field_image_overlay[LANGUAGE_NONE][0]['uri'];
-  } else {
-    $image_style = 'channel_block_auto_overlay';
-  }
-  $image_item_overlay = array(
-    'style_name' => $image_style,
-    'path' => $img_uri,
-    'width' => '',
-    'height' => '',
-    'alt' => $image_alt,
-    'title' => $image_alt,
-  );
-  $image_overlay_output =  theme('image_style', $image_item_overlay);
+    $image_alt = $wrapped->value()->title;
+    $image_item = array(
+      'style_name' => $image_style,
+      'path' => $img_uri,
+      'width' => '',
+      'height' => '',
+      'alt' => $image_alt,
+      'title' => $image_alt,
+    );
+    $image_output =  theme('image_style', $image_item);
 
-  // link elements
-  $link_elements = array(
-    'title' => $title,
-    'image-1' => $image_output,
-    'image-2' => $image_overlay_output,
-  );
-  foreach ($link_elements as $key=>$el) {
-    $link_elements['output'][$key] = l($el, $node_link, array('html' => TRUE));
-  }
+    // overlay image
+    // if no overlay image, use standard image with image desaturation
+    if ($wrapped->value()->field_image_overlay) {
+      $img_uri = $wrapped->value()->field_image_overlay[LANGUAGE_NONE][0]['uri'];
+    } else {
+      $image_style = 'channel_block_auto_overlay';
+    }
+    $image_item_overlay = array(
+      'style_name' => $image_style,
+      'path' => $img_uri,
+      'width' => '',
+      'height' => '',
+      'alt' => $image_alt,
+      'title' => $image_alt,
+    );
+    $image_overlay_output =  theme('image_style', $image_item_overlay);
+
+    // link elements
+    $link_elements = array(
+      'title' => $title,
+      'image-1' => $image_output,
+      'image-2' => $image_overlay_output,
+    );
+    foreach ($link_elements as $key=>$el) {
+      $link_elements['output'][$key] = l($el, $node_link, array('html' => TRUE));
+    }
 
 
-  // output assembly
-  $element = array(
-    '#type' => 'container',
-    '#attributes' => array(
-      'class' => array('channel-img-wrapper'),
-    ),
-  );
-
-  $element['channel-img-wrapper']['channel-img'] = array(
-    'markup' => array(
-      'image' => array(
-        '#prefix' => '<div class="channel-img-el channel-img-base">',
-        '#suffix' => '</div>',
-        '#markup' => $link_elements['output']['image-1'],
+    // output assembly
+    $element = array(
+      '#type' => 'container',
+      '#attributes' => array(
+        'class' => array('channel-img-wrapper'),
       ),
-      'image-overlay' => array(
-        '#prefix' => '<div class="channel-img-el channel-img-overlay">',
-        '#suffix' => '</div>',
-        'items' => array(
-          'image' => array(
-            '#prefix' => '<div class="channel-img-el-inner channel-img-overlay-image">',
-            '#suffix' => '</div>',
-            '#markup' => $link_elements['output']['image-2'],
-          ),
-          'title' => array(
-            '#prefix' => '<div class="channel-img-el-inner channel-img-overlay-title">',
-            '#suffix' => '</div>',
-            '#markup' => $link_elements['output']['title'],
+    );
+
+    $element['channel-img-wrapper']['channel-img'] = array(
+      'markup' => array(
+        'image' => array(
+          '#prefix' => '<div class="channel-img-el channel-img-base">',
+          '#suffix' => '</div>',
+          '#markup' => $link_elements['output']['image-1'],
+        ),
+        'image-overlay' => array(
+          '#prefix' => '<div class="channel-img-el channel-img-overlay">',
+          '#suffix' => '</div>',
+          'items' => array(
+            'image' => array(
+              '#prefix' => '<div class="channel-img-el-inner channel-img-overlay-image">',
+              '#suffix' => '</div>',
+              '#markup' => $link_elements['output']['image-2'],
+            ),
+            'title' => array(
+              '#prefix' => '<div class="channel-img-el-inner channel-img-overlay-title">',
+              '#suffix' => '</div>',
+              '#markup' => $link_elements['output']['title'],
+            ),
           ),
         ),
       ),
-    ),
-  );
-  return render($element);
+    );
+    return render($element);
+  }
 
-    return '<div class="channel-cover"><h4> ' . $title . '</h4></div>';
+
+//    return '<div class="channel-cover"><h4> ' . $title . '</h4></div>';
 
 }
 
@@ -206,5 +228,24 @@ function bcr_channel_fields_ds_field_cover($field) {
     $link = l($title, $url);
 
     return '<div class="channel-cover"><h4> ' . $link . '</h4></div>';
+  }
+}
+
+
+
+/**
+ * Implements template_preprocess_node().
+ */
+function bcr_channel_fields_preprocess_node(array &$variables) {
+  if (isset($variables['content']['custom_pager_top'])) {
+    bcr_channel_fields_add_custom_pagers($variables, $variables['content']['custom_pager_top']);
+  }
+  if (isset($variables['content']['custom_pager_bottom'])) {
+    bcr_channel_fields_add_custom_pagers($variables, $variables['content']['custom_pager_bottom']);
+  }
+}
+function bcr_channel_fields_add_custom_pagers(array &$variables, $pagers) {
+  foreach (element_children($pagers) as $id) {
+    $variables["custom_pager_{$id}"] = $pagers[$id]['#markup'];
   }
 }

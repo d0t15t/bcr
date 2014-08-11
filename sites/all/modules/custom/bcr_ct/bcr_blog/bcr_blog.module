@@ -5,36 +5,3 @@
  */
 
 include_once 'bcr_blog.features.inc';
-
-
-/*
- * custom module additions
- */
-
-/**
- * Implements hook_node_view().
- *
- *
- */
-
-
-function bcr_blog_ds_fields_info($entity_type) {
-
-// Provide a custom field to display suite
-  $fields = array();
-
-  $fields['node']['banner'] = array(
-    'title' => t('Banner'),
-    'field_type' => DS_FIELD_TYPE_FUNCTION,
-    'function' => 'bcr_blog_ds_field_banner',
-  );
-
-  return $fields;
-}
-
-function bcr_blog_ds_field_banner($field) {
-//  $block = module_invoke('views','block_view','fe06a0f1e207793ef27dff056ef2836a');
-//  $render = '<div id="banner-insert-block">' . render($block) . '</div>';
-  $render = 'something';
-  print $render;
-}

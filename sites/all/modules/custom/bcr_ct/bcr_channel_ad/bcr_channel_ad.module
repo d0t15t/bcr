@@ -5,5 +5,3 @@
  */
 
 include_once 'bcr_channel_ad.features.inc';
-
-

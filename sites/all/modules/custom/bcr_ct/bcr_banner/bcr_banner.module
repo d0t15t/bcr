@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the BCR Banner feature.
+ */
+
+include_once 'bcr_banner.features.inc';
