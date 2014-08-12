@@ -385,23 +385,6 @@ a:hover {
 /* line 25, ../sass/_blog.scss */
 .blog-post-region .field-type-image .field-item {
   margin-bottom: 20px;
-  width: 220px;
-  max-height: 160px;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-}
-/* line 33, ../sass/_blog.scss */
-.blog-post-region .field-type-image .field-item:first-child {
-  width: auto;
-  max-height: none;
-  margin-right: 0;
-  display: block;
-}
-/* line 44, ../sass/_blog.scss */
-.blog-post-region .field-type-image .field-item:nth-child(4), .blog-post-region .field-type-image .field-item:nth-child(7), .blog-post-region .field-type-image .field-item:nth-child(10), .blog-post-region .field-type-image .field-item:nth-child(13), .blog-post-region .field-type-image .field-item:nth-child(16), .blog-post-region .field-type-image .field-item:nth-child(19) {
-  margin-right: 0;
 }
 /* line 52, ../sass/_blog.scss */
 .blog-post-region .field-name-banner {
@@ -410,22 +393,23 @@ a:hover {
   padding-bottom: 0px;
   border: 1px solid #ccc;
   margin-bottom: 10px;
+  margin-left: 10px;
 }
-/* line 58, ../sass/_blog.scss */
+/* line 59, ../sass/_blog.scss */
 .blog-post-region .field-name-banner .field-type-image {
   padding: 0px !important;
 }
-/* line 60, ../sass/_blog.scss */
+/* line 61, ../sass/_blog.scss */
 .blog-post-region .field-name-banner .field-type-image .field-item {
   margin: 0px !important;
 }
-/* line 64, ../sass/_blog.scss */
+/* line 65, ../sass/_blog.scss */
 .blog-post-region .field-name-banner .banner-info {
   text-align: right;
   font-size: .7em;
   color: #ccc;
 }
-/* line 71, ../sass/_blog.scss */
+/* line 72, ../sass/_blog.scss */
 .blog-post-region .flag-recommend .flag-wrapper {
   border: 1px solid #ccc;
   -webkit-border-radius: 3px;
@@ -435,14 +419,15 @@ a:hover {
   border-radius: 3px;
   padding: 5px;
 }
-/* line 75, ../sass/_blog.scss */
+/* line 76, ../sass/_blog.scss */
 .blog-post-region .flag-recommend .flag-wrapper a, .blog-post-region .flag-recommend .flag-wrapper a:link {
   color: #ccc;
 }
-/* line 82, ../sass/_blog.scss */
+/* line 83, ../sass/_blog.scss */
 .blog-post-region .service-links #twitter-widget-0 {
   position: relative;
-  top: -3px;
+  top: 6px;
+  left: 10px;
 }
 
 /* line 9, ../sass/_menus.scss */
