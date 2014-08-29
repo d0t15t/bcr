@@ -1,7 +1,7 @@
 name = BCR Files
 description = Add file attachment links
 core = 7.x
-package = Features
+package = BCR
 dependencies[] = attachment_links
 dependencies[] = bcr_blog
 dependencies[] = features
