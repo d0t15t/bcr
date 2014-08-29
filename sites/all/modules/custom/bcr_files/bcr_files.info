@@ -1,0 +1,15 @@
+name = BCR Files
+description = Add file attachment links
+core = 7.x
+package = Features
+dependencies[] = attachment_links
+dependencies[] = bcr_blog
+dependencies[] = features
+dependencies[] = file
+dependencies[] = text
+features[features_api][] = api:2
+features[field_instance][] = node-file-body
+features[field_instance][] = node-file-field_file
+features[node][] = file
+features_exclude[dependencies][filefield_paths] = filefield_paths
+project path = sites/all/modules/custom

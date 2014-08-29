@@ -43,15 +43,6 @@ function bcr_channel_fields_ds_fields_info($entity_type) {
     'function' => 'bcr_channel_fields_ds_cmp_image',
     'properties' => array(
       'formatters' => $formatters,
-//      'formatters' => array(
-//        'content_type_image_display' => array(
-//          'type' => 'textfield',
-//          'description' => t('Choose the compound image size'),
-//        ),
-//      ),
-//      'default' => array(
-//        'content_type_image_display' => 'defualt',
-//      ),
     ),
   );
 

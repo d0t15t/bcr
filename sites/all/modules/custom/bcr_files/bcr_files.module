@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the BCR Files feature.
+ */
+
+include_once 'bcr_files.features.inc';
