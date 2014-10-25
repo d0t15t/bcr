@@ -11,6 +11,65 @@
   background: white;
   z-index: 10;
 
+  #live-options-toggle {
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .mobile-links {
+    position: absolute;
+    z-index: 10;
+    left: 80px;
+    top: 10px;
+    @include header-font;
+    padding: 8px 12px 6px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: block;
+    @media only screen and (min-device-width:769px){
+      display: none;
+    }
+  }
+
+  .live-options {
+    @include header-font;
+    position: fixed;
+    border: 1px solid black;
+    top: 2.5%;
+    left: 2.5%;
+    width: 95%;
+    height: 95%;
+    display: none;
+    background: white;
+    z-index: 100;
+
+    label {
+      cursor: pointer;
+      &:hover {
+        color: red;
+      }
+    }
+
+    ul {
+      list-style: none;
+      width: 50%;
+      padding: 0;
+      margin: 0 auto;
+      font-size: 24px;
+      position: relative;
+      top: 50%;
+      @include transform(translate(0, -50%));
+      li {
+        padding: 20px 0 18px;
+        border-top: 1px solid black;
+      }
+    }
+  }
+
+  #live-options-toggle:checked ~ .live-options {
+    display: block;
+  }
+
   #logo-element, iframe, .streaming-menu {
     display: inline-block;
   }

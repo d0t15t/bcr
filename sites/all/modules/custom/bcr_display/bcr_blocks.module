@@ -114,8 +114,28 @@ function bcr_player_block_render() {
   $block .= '</div>';
 //  print $block['content'];
 
-  return '<div class="container">
-            
+  return '
+          <input type="checkbox" id="live-options-toggle" />
+
+            <div class="live-options">
+              <ul>
+                <li><a href="http://tunein.com/radio/Berlin-Community-Radio-s209811/">TuneIn stream</a></li>
+                <li><a href="'. $base_url .'/sites/all/themes/bcr_bootstrap/streams/bcr.m3u">M3U file</a></li>
+                <li><a href="'. $base_url .'/sites/all/themes/bcr_bootstrap/streams/bcr.pls">PLS file</a></li>
+                <li>
+                  <label for="live-options-toggle">
+                    X Close
+                  </label>
+                </li>
+              </ul>
+              
+            </div>
+
+          <div class="container">
+            <label class="mobile-links" for="live-options-toggle">
+              Listen Live
+            </label>
+
             <iframe  src="'. $base_url .'/sites/all/modules/custom/jplayer/bcr-jplayer.html"></iframe>
             <!-- <iframe  src="'. $base_url .'/sites/default/files/jplayer/bcr-jplayer.html"></iframe> -->
             ' . $block . '
