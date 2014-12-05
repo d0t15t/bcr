@@ -1,9 +1,14 @@
 // page layout
 
 #homepage-panel {
+  width: 704px;
   padding-top: 360px;
   background: url(../images/logotypebig.png) no-repeat 0px 20px;
   background-size: 700px;
+
+  .panels-flexible-region-4-center {
+    width: 100%;
+  }
 
   .panels-flexible-region-last {
     h2 {

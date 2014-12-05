@@ -32,6 +32,7 @@
     <?php if ($content_attributes): ?><div<?php print $content_attributes; ?>><?php endif; ?>
     <div class="navbar-header">
 
+
       <?php // LOGO ?>
 <!--      <div class="logo-wrapper col-sm-2">-->
 <!--      --><?php //if ($page['logo']): ?>

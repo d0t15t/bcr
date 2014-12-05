@@ -141,16 +141,32 @@ a:hover {
     // upper right
     .panels-flexible-region-4-center {
       .panels-flexible-region-4-center-inside {
-        padding: 0 0 0 20px;
+        padding: 0;
+
+        .pane-bcr-blog-recent-panel-pane-1 {
+          .pane-title {
+            display: none;
+          }
+        }
 
         // recent blog
         .view-bcr-blog-recent {
+          
           .views-row {
-            margin: 0px 0px 30px 0px ;
+            margin: 0px 20px 30px 0px;
             .field-type-image {
               width: 100%;
               height: auto;
             }
+            &:nth-child(3n) {
+              margin-right: 0;
+            }
+          }
+
+          .more-link {
+            clear: both;
+            text-align: right;
+            @include header-font;
           }
         }
       }
