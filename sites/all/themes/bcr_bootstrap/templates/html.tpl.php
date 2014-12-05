@@ -74,6 +74,6 @@
 
   <?php // LIVE CHAT EMBED ?>
 
-  <script id="cid0020000078773269376" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 400px;height: 300px;">{"handle":"bcrtest","arch":"js","styles":{"a":"ffffff","b":100,"c":"000000","d":"000000","h":"eeeeee","k":"cccccc","l":"ffffff","m":"ffffff","q":"000000","r":100,"pos":"tr","cv":1,"cvbg":"ffffff","cvfg":"000000","cvw":75,"cvh":58,"surl":0}}</script>
+  <script id="cid0020000078773269376" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 400px;height: 300px;">{"handle":"berlincommunityradio","arch":"js","styles":{"a":"ffffff","b":100,"c":"000000","d":"000000","h":"eeeeee","k":"cccccc","l":"ffffff","m":"ffffff","q":"000000","r":100,"pos":"tr","cv":1,"cvbg":"ffffff","cvfg":"000000","cvw":75,"cvh":58,"surl":0}}</script>
 
 </html>
